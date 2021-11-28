@@ -1,0 +1,94 @@
+
+* Info: Process launched (host madjid-Inspiron-3543, process 6908)
+
+ NAS Parallel Benchmarks (NPB3.4-MZ OpenMP) - BT-MZ Benchmark
+
+ Number of zones:   4 x   4
+ Total mesh size:    64 x    64 x   8
+ Iterations: 200    dt:   0.000800
+
+ Use the default load factors
+ Number of outer-level threads:     1
+ Total number of threads:      1  (  1.0 inner-threads/outer-thread)
+
+ Time step    1
+ Time step   20
+ Time step   40
+ Time step   60
+ Time step   80
+ Time step  100
+ Time step  120
+ Time step  140
+ Time step  160
+ Time step  180
+ Time step  200
+ Verification being performed for class W
+ accuracy setting for epsilon =  0.1000000000000E-07
+ Comparison of RMS-norms of residual
+           1 0.5562611195402E+05 0.5562611195402E+05 0.2289019558898E-13
+           2 0.5151404119932E+04 0.5151404119932E+04 0.3195605260010E-13
+           3 0.1080453907954E+05 0.1080453907954E+05 0.4314917838667E-12
+           4 0.6576058591929E+04 0.6576058591929E+04 0.2033067669511E-13
+           5 0.4528609293561E+05 0.4528609293561E+05 0.3100863263992E-13
+ Comparison of RMS-norms of solution error
+           1 0.7185154786403E+04 0.7185154786403E+04 0.4961924046085E-13
+           2 0.7040472738068E+03 0.7040472738068E+03 0.3326408529931E-13
+           3 0.1437035074443E+04 0.1437035074443E+04 0.1887614294376E-12
+           4 0.8570666307849E+03 0.8570666307849E+03 0.3143720636440E-13
+           5 0.5991235147368E+04 0.5991235147368E+04 0.6770467641700E-13
+ Verification Successful
+
+
+ BT-MZ Benchmark Completed.
+ Class           =                        W
+ Size            =             64x   64x  8
+ Iterations      =                      200
+ Time in seconds =                     5.21
+ Total o_threads =                        1
+ Total threads   =                        1
+ Mop/s total     =                  2754.69
+ Mop/s/thread    =                  2754.69
+ Operation type  =           floating point
+ Verification    =               SUCCESSFUL
+ Version         =                    3.4.1
+ Compile date    =              23 Nov 2021
+
+ Compile options:
+    FC           = gfortran
+    FLINK        = $(FC)
+    F_LIB        = (none)
+    F_INC        = (none)
+    FFLAGS       = -O3 -g -fopenmp
+    FLINKFLAGS   = $(FFLAGS)
+    RAND         = (none)
+
+
+ Please send all errors/feedbacks to:
+
+ NPB Development Team
+ npb@nas.nasa.gov
+
+
+
+* Info: Process finished (host madjid-Inspiron-3543, process 6908)
+* Info: Dumping samples (host madjid-Inspiron-3543, process 6908)
+* Info: Dumping source info for callchain nodes (host madjid-Inspiron-3543, process 6908)
+* Info: Building/writing metadata (host madjid-Inspiron-3543)
+* Info: Finished collect step (host madjid-Inspiron-3543, process 6908)
+
+Your experiment path is /home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/bin/maqao_2021-11-28_22-16-50/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#################################################################################################
+#    LEVEL    |     REPORT     |                            COMMAND                             #
+#################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-M  #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-M  #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/madjid/Bureau/CHPS/Maqao/NPB3.4  #
+#################################################################################################
+

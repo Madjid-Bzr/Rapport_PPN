@@ -1,0 +1,5 @@
+name;time_p;time_s;cpi_ratio;
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/bin/maqao_2021-11-28_22-16-50/binaries/bt-mz.W.x;98.55;5.26;;
+/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;1.16;0.06;;
+/usr/lib/x86_64-linux-gnu/libgfortran.so.5.0.0;0.19;0.01;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;0.1;0.01;;

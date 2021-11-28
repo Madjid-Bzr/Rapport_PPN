@@ -1,0 +1,22 @@
+address;source_location;insn;indent
+0x4b60;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:179;PXOR	%XMM0,%XMM0;
+0x4b64;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:180;MOV	0x18(%RSP),%RCX;
+0x4b69;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:180;MOV	%R14,%RDX;
+0x4b6c;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:180;MOV	%R13,%RSI;
+0x4b6f;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:179;CVTSI2SD	%EBX,%XMM0;
+0x4b73;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:179;MULSD	0x20ded(%RIP),%XMM0;
+0x4b7b;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:180;MOV	%R12,%RDI;
+0x4b7e;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:178;ADD	$0x1,%EBX;
+0x4b81;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:179;MOVSD	%XMM0,0x98(%RSP);
+0x4b8a;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:180;CALL	5ac0 <exact_solution_>;
+0x4b8f;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOV	(%R15),%RDX;
+0x4b92;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOVAPD	0xb0(%RSP),%XMM6;
+0x4b9b;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOVAPD	0xc0(%RSP),%XMM7;
+0x4ba4;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOVSD	0xd0(%RSP),%XMM0;
+0x4bad;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;LEA	(%RDX,%RBP,8),%RCX;
+0x4bb1;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOVUPS	%XMM6,(%RCX);
+0x4bb4;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOVUPS	%XMM7,0x10(%RCX);
+0x4bb8;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;MOVSD	%XMM0,0x20(%RDX,%RBP,8);
+0x4bbe;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:182;ADD	$0x5,%RBP;
+0x4bc2;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:178;CMP	%EBX,0x10(%RSP);
+0x4bc6;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90:178;JNE	4b60 <initialize_._omp_fn.0+0x970>;

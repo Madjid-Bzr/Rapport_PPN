@@ -1,0 +1,5 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;0;100;0;1466;0;0;0;0;0;7.33;0;0;
+madjid-Inspiron-3543;_ALL;_ALL;0;100;0;1466;0;0;0;0;0;7.33;0;0;
+madjid-Inspiron-3543;7460;_ALL;0;100;0;1466;0;0;0;0;0;7.33;0;0;
+madjid-Inspiron-3543;7460;7460;0;100;0;1466;0;0;0;0;0;7.33;0;0;

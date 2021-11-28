@@ -1,0 +1,18 @@
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/initialize.f90: 215 - 249
+--------------------------------------------------------------------------------
+
+215:       subroutine lhsinit(lhs, size)
+[...]
+231:             lhs(m,n,1,0) = 0.0d0
+232:             lhs(m,n,2,0) = 0.0d0
+233:             lhs(m,n,3,0) = 0.0d0
+234:             lhs(m,n,1,i) = 0.0d0
+235:             lhs(m,n,2,i) = 0.0d0
+236:             lhs(m,n,3,i) = 0.0d0
+[...]
+244:          lhs(m,m,2,0) = 1.0d0
+245:          lhs(m,m,2,i) = 1.0d0
+246:       enddo
+247: 
+248:       return
+249:       end

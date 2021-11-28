@@ -1,0 +1,8 @@
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/exact_solution.f90: 24 - 28
+--------------------------------------------------------------------------------
+
+24:      &     zeta*ce(m,13))))
+25:       enddo
+26: 
+27:       return
+28:       end

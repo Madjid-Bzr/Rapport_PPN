@@ -1,0 +1,4 @@
+name;time_p;time_s;cpi_ratio;
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/bin/maqao_2021-11-28_15-10-49/binaries/bt-mz.A.x;99.75;61.82;;
+/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0;0.22;0.14;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;0.02;0.02;;

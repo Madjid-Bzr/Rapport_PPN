@@ -1,0 +1,4 @@
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/rhs.f90: 64 - 64
+--------------------------------------------------------------------------------
+
+64:                   rhs(m,i,j,k) = forcing(m,i,j,k)

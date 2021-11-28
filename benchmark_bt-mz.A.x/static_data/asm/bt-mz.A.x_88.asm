@@ -1,0 +1,21 @@
+address;source_location;insn;indent
+0x132c8;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;MOV	0x20(%RBX),%RSI;
+0x132cc;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;LEA	(%R13,%R14,1),%RCX;
+0x132d1;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;MOV	%R12,%RDI;
+0x132d4;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;LEA	0xc8(%R12),%RBP;
+0x132dc;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;LEA	(%RSI,%R13,1),%RDX;
+0x132e0;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;ADD	%RCX,%RSI;
+0x132e3;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:344;CALL	14690 <matvec_sub_>;
+0x132e8;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:351;LEA	-0xc8(%R12),%RSI;
+0x132f0;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:351;MOV	%R12,%RDI;
+0x132f3;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:351;MOV	%RBP,%RDX;
+0x132f6;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:351;CALL	14830 <matmul_sub_>;
+0x132fb;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;MOV	0x20(%RBX),%RDX;
+0x132ff;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;LEA	0x190(%R12),%RSI;
+0x13307;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;MOV	%RBP,%RDI;
+0x1330a;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;ADD	$0x258,%R12;
+0x13311;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;ADD	%R13,%RDX;
+0x13314;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;CALL	15250 <binvcrhs_>;
+0x13319;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:359;ADD	0x4a0(%RSP),%R13;
+0x13321;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:336;CMP	%R15,%R12;
+0x13324;/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/y_solve.f90:336;JNE	132c8 <y_solve_._omp_fn.0+0x21f8>;

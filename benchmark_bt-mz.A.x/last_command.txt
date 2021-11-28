@@ -1,0 +1,1 @@
+maqao oneview --create-report=one --output-format=all --binary=./bt-mz.A.x OMP_NUM_THREADS=1 

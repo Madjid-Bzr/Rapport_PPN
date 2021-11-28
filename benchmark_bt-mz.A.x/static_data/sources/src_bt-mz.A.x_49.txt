@@ -1,0 +1,4 @@
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/exact_rhs.f90: 32 - 32
+--------------------------------------------------------------------------------
+
+32:                   forcing(m,i,j,k) = 0.0d0

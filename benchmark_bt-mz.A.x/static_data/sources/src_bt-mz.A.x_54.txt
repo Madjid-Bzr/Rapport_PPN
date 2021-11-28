@@ -1,0 +1,70 @@
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/rhs.f90: 185 - 406
+--------------------------------------------------------------------------------
+
+185:             do i = 1, nx-2
+[...]
+236:             do i = 1, nx-2
+[...]
+296:             do i = 1, nx-2
+297:                wijk = ws(i,j,k)
+298:                wp1  = ws(i,j,k+1)
+299:                wm1  = ws(i,j,k-1)
+300: 
+301:                rhs(1,i,j,k) = rhs(1,i,j,k) + dz1tz1 *  &
+302:      &                 (u(1,i,j,k+1) - 2.0d0*u(1,i,j,k) +  &
+303:      &                 u(1,i,j,k-1)) -  &
+304:      &                 tz2 * (u(4,i,j,k+1) - u(4,i,j,k-1))
+[...]
+311:      &                 u(2,i,j,k-1)*wm1)
+[...]
+318:      &                 u(3,i,j,k-1)*wm1)
+[...]
+327:      &                 *c2)
+[...]
+341:      &                 c2*square(i,j,k-1))*wm1)
+[...]
+347:             if (k .eq. 1) then
+348:             do i = 1, nx-2
+349:                do m = 1, 5
+350:                   rhs(m,i,j,k) = rhs(m,i,j,k)- dssp *  &
+351:      &                    ( 5.0d0*u(m,i,j,k) - 4.0d0*u(m,i,j,k+1) +  &
+352:      &                    u(m,i,j,k+2))
+353:                enddo
+354:             enddo
+355: 
+356:             else if (k .eq. 2) then
+357:             do i = 1, nx-2
+358:                do m = 1, 5
+359:                   rhs(m,i,j,k) = rhs(m,i,j,k) - dssp *  &
+360:      &                    (-4.0d0*u(m,i,j,k-1) + 6.0d0*u(m,i,j,k) -  &
+361:      &                    4.0d0*u(m,i,j,k+1) + u(m,i,j,k+2))
+362:                enddo
+363:             enddo
+364:          
+365:             else if (k .eq. nz-3) then
+366:             do i = 1, nx-2
+367:                do m = 1, 5
+368:                   rhs(m,i,j,k) = rhs(m,i,j,k) - dssp *  &
+369:      &                    ( u(m,i,j,k-2) - 4.0d0*u(m,i,j,k-1) +  &
+370:      &                    6.0d0*u(m,i,j,k) - 4.0d0*u(m,i,j,k+1) )
+371:                enddo
+372:             enddo
+373: 
+374:             else if (k .eq. nz-2) then
+375:             do i = 1, nx-2
+376:                do m = 1, 5
+377:                   rhs(m,i,j,k) = rhs(m,i,j,k) - dssp *  &
+378:      &                    ( u(m,i,j,k-2) - 4.d0*u(m,i,j,k-1) +  &
+379:      &                    5.d0*u(m,i,j,k) )
+380:                enddo
+381:             enddo
+382: 
+383:             else
+384:             do i = 1,nx-2
+385:                do m = 1, 5
+386:                   rhs(m,i,j,k) = rhs(m,i,j,k) - dssp *  &
+387:      &                    (  u(m,i,j,k-2) - 4.0d0*u(m,i,j,k-1) +  &
+388:      &                    6.0*u(m,i,j,k) - 4.0d0*u(m,i,j,k+1) +  &
+389:      &                    u(m,i,j,k+2) )
+[...]
+406:                   rhs(m,i,j,k) = rhs(m,i,j,k) * dt

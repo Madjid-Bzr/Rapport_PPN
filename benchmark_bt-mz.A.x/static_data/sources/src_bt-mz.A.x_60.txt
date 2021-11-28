@@ -1,0 +1,40 @@
+/home/madjid/Bureau/CHPS/Maqao/NPB3.4.1-MZ/NPB3.4-MZ-OMP/BT-MZ/rhs.f90: 185 - 404
+--------------------------------------------------------------------------------
+
+185:             do i = 1, nx-2
+186:                vijk = vs(i,j,k)
+187:                vp1  = vs(i,j+1,k)
+188:                vm1  = vs(i,j-1,k)
+189:                rhs(1,i,j,k) = rhs(1,i,j,k) + dy1ty1 *  &
+190:      &                 (u(1,i,j+1,k) - 2.0d0*u(1,i,j,k) +  &
+191:      &                 u(1,i,j-1,k)) -  &
+192:      &                 ty2 * (u(3,i,j+1,k) - u(3,i,j-1,k))
+[...]
+199:      &                 u(2,i,j-1,k)*vm1)
+[...]
+208:      &                 *c2)
+[...]
+215:      &                 u(4,i,j-1,k)*vm1)
+[...]
+229:      &                 c2*square(i,j-1,k)) * vm1)
+[...]
+235:             if (j .eq. 1) then
+[...]
+244:             else if (j .eq. 2) then
+245:             do i = 1, nx-2
+246:                do m = 1, 5
+247:                   rhs(m,i,j,k) = rhs(m,i,j,k) - dssp *  &
+248:      &                    (-4.0d0*u(m,i,j-1,k) + 6.0d0*u(m,i,j,k) -  &
+249:      &                    4.0d0*u(m,i,j+1,k) + u(m,i,j+2,k))
+250:                enddo
+251:             enddo
+252:          
+253:             else if (j .eq. ny-3) then
+254:             do i = 1, nx-2
+[...]
+262:             else if (j .eq. ny-2) then
+263:             do i = 1, nx-2
+[...]
+272:             do i = 1,nx-2
+[...]
+404:             do i = 1, nx-2

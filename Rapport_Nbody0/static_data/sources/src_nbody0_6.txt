@@ -1,0 +1,9 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody0.c: 54 - 152
+--------------------------------------------------------------------------------
+
+54:   vector c = { a.x + b.x, a.y + b.y };
+[...]
+62:   vector c = { b * a.x, b * a.y };
+[...]
+151:   for (int i = 0; i < nbodies; i++)
+152:     positions[i] = add_vectors(positions[i], add_vectors(velocities[i], scale_vector(0.5, accelerations[i])));

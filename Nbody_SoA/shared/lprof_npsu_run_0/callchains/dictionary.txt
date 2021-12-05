@@ -1,0 +1,19 @@
+__driDriverGetExtensions_d3d12 - :0
+iris_dri.so
+nouveau_drm_screen_create - :0
+SDL_DYNAPI_entry - :0
+libSDL2-2.0.so.0.10.0
+_dl_find_dso_for_object - :0
+ld-2.31.so
+_dl_catch_exception - :0
+libc-2.31.so
+_Xutf8TextListToTextProperty - :0
+libX11.so.6.3.0
+psiginfo - :0
+__printf_chk - :0
+XML_GetFeatureList - :0
+libexpat.so.1.6.11
+unknown kernel region
+kernel
+compute_accelerations - /home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody_op.c:96
+nbody_op

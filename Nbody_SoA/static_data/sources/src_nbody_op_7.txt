@@ -1,0 +1,14 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody_op.c: 69 - 79
+--------------------------------------------------------------------------------
+
+69:     for (int i = 0; i < nbodies - 1; i++) {
+70:         for (int j = i + 1; j < nbodies; j++) {
+71:             if (positions.x[i] == positions.x[j] &&
+72:                 positions.y[i] == positions.y[j])
+73: 	        {
+74:                 double tempx = velocities.x[i];
+75:                 double tempy = velocities.y[i];
+76:                 velocities.x[i] = velocities.x[j];
+77:                 velocities.y[i] = velocities.y[j];
+78:                 velocities.x[j] = tempx;
+79:                 velocities.y[j] = tempy;

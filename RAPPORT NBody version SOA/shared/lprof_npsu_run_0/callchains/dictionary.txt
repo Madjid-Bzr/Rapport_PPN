@@ -1,6 +1,0 @@
-__driDriverGetExtensions_d3d12 - :0
-swrast_dri.so
-SDL_DYNAPI_entry - :0
-libSDL2-2.0.so.0.10.0
-glIsTextureEXT - :0
-libGLX_mesa.so.0.0.0

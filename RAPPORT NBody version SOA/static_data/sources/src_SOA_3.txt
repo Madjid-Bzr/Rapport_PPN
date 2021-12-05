@@ -1,7 +1,0 @@
-/home/anism/Bureau/Test Nbody/SOA.c: 253 - 256
---------------------------------------------------------------------------------
-
-253:       for (int i = 0; i < nbodies; i++)
-254: 	{
-255: 	  SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-256: 	  SDL_RenderDrawPoint(renderer, positions.x[i], positions.y[i]);

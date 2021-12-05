@@ -1,0 +1,10 @@
+/home/anism/Bureau/Test Nbody Version Scalaire /nbody_Version_SSE_Scalar.c: 220 - 226
+--------------------------------------------------------------------------------
+
+220:     for (int j = i + 1; j < nbodies; j++)
+221:       if (positions[i].x == positions[j].x &&
+222: 	  positions[i].y == positions[j].y)
+223: 	{
+224: 	  vector temp = velocities[i];
+225: 	  velocities[i] = velocities[j];
+226: 	  velocities[j] = temp;

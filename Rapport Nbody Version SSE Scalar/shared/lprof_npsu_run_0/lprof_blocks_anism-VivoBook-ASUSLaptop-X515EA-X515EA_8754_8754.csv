@@ -1,0 +1,9 @@
+block_id;module;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+265;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:64-242;94.24;3.68;;;;;;
+282;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:64-257;0.38;0.01;;;;;;
+24;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:219-219;0.13;0;;;;;;
+25;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:220-220;0.13;0;;;;;;
+30;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:221-221;0.13;0;;;;;;
+61;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:221-221;0.13;0;;;;;;
+67;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:221-221;0.13;0;;;;;;
+76;nbody_Version_SSE_Scalar;nbody_Version_SSE_Scalar.c:221-221;0.13;0;;;;;;

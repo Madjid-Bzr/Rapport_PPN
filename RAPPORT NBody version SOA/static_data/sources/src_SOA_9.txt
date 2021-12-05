@@ -1,0 +1,18 @@
+/home/anism/Bureau/Test Nbody/SOA.c: 151 - 165
+--------------------------------------------------------------------------------
+
+151:       for(int j = 0; j < nbodies; j++){
+152: 	if(i != j){
+153:     accelerations.x[i] = accelerations.x[i]+
+154: 					                          (GravConstant * masses[j] / (pow(sqrt((positions.x[i]- positions.x[j])*(positions.x[i]- positions.x[j])+ (positions.y[i]- positions.y[j])*(positions.y[i]- positions.y[j])), 3) + 1e7)*
+155:                                     
+156:                                     
+157:                                     (positions.x[j]- positions.x[i])
+158:                                     )
+159:                         ;
+160: 
+161:     accelerations.y[i] = accelerations.y[i]+
+162: 					                          (GravConstant * masses[j] / (pow(sqrt((positions.x[i]- positions.x[j])*(positions.x[i]- positions.x[j])+ (positions.y[i]- positions.y[j])*(positions.y[i]- positions.y[j])), 3) + 1e7)*
+163:                                     
+164:                                     
+165:                                     (positions.y[j]- positions.y[i])

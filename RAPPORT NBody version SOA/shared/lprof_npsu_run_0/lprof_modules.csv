@@ -1,0 +1,14 @@
+name;time_p;time_s;cpi_ratio;
+/home/anism/Bureau/Test Nbody/maqao_2021-12-05_11-57-12/binaries/SOA;66.94;1.88;;
+/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so;24.73;0.69;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;2.02;0.06;;
+/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.10.0;1.88;0.05;;
+/usr/lib/x86_64-linux-gnu/libpthread-2.31.so;1.34;0.04;;
+anon;1.21;0.03;;
+/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0;0.54;0.02;;
+/usr/lib/x86_64-linux-gnu/ld-2.31.so;0.27;0.01;;
+/usr/lib/x86_64-linux-gnu/libGLX.so.0.0.0;0.27;0.01;;
+/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0;0.27;0.01;;
+/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0;0.27;0.01;;
+/usr/lib/x86_64-linux-gnu/libLLVM-12.so.1;0.13;0;;
+/usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0;0.13;0;;

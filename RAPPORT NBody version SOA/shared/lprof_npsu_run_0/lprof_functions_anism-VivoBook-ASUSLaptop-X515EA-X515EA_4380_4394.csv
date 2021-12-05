@@ -1,0 +1,4 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+814;swrast_dri.so;__driDriverGetExtensions_d3d12;;88.46;0.12;;;;;;"0,0,0,0,0,0,0,0,0,100";
+153;libpthread-2.31.so;__GI___pthread_mutex_lock;;7.69;0.01;;;;;;"0,0,0,0,0,100,0,0,0,0";
+0;anon;Unknown function;;3.85;0;;;;;;"0,0,0,0,0,0,0,0,0,100";

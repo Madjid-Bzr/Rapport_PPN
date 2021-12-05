@@ -1,0 +1,76 @@
+/usr/include/x86_64-linux-gnu/bits/stdio2.h: 107 - 107
+--------------------------------------------------------------------------------
+
+107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+/home/anism/Bureau/Test Nbody/SOA.c: 41 - 277
+--------------------------------------------------------------------------------
+
+41:   __asm__ volatile ("rdtsc" : "=a" (a), "=d" (d));
+42:   
+43:   return (d << 32) | a;
+[...]
+181:   for (int i = 0; i < nbodies; i++){
+182:     velocities.x[i] = velocities.x[i]+ accelerations.x[i];
+183:     velocities.y[i] = velocities.y[i]+ accelerations.y[i];
+[...]
+211:   compute_accelerations();
+212:   compute_positions();
+213:   compute_velocities();
+214:   resolve_collisions();
+215: }
+216: 
+217: //
+218: int main(int argc, char **argv)
+219: {
+[...]
+227:   srand(time(NULL));
+228:   
+229:   //
+230:   SDL_Init(SDL_INIT_VIDEO);
+231:   SDL_CreateWindowAndRenderer(800, 800, SDL_WINDOW_OPENGL, &window, &renderer);
+232:   
+233:   //
+234:   init_system();
+235:   
+236:   //Main loop
+237:   for (int i = 0; !quit && i < timeSteps; i++)
+238:     {	  
+239:       //
+240:       double before = (double)rdtsc();
+241:       
+242:       simulate();
+243: 
+244:       //
+245:       double after = (double)rdtsc();
+246:       
+247:       //
+248:       printf("%d %lf\n", i, (after - before));
+249:       
+250:       SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+251:       SDL_RenderClear(renderer);
+252:       
+253:       for (int i = 0; i < nbodies; i++)
+254: 	{
+255: 	  SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+256: 	  SDL_RenderDrawPoint(renderer, positions.x[i], positions.y[i]);
+257: 	}
+258:       
+259:       SDL_RenderPresent(renderer);
+260:       
+261:       SDL_Delay(10);
+262:       
+263:       while (SDL_PollEvent(&event))
+264: 	if (event.type == SDL_QUIT)
+265: 	  quit = 1;
+266: 	else
+267: 	  if (event.type == SDL_KEYDOWN)
+268: 	    if (event.key.keysym.sym == SDLK_q)
+269: 	      quit = 1;
+270:     }
+271:   
+272:   SDL_DestroyRenderer(renderer);
+273:   SDL_DestroyWindow(window);
+274:   SDL_Quit();
+275:   
+276:   return 0;
+277: }

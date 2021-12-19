@@ -1,0 +1,10 @@
+name;time_p;time_s;cpi_ratio;
+/home/katia/Test-maqao/maqao_2021-12-13_23-37-47/binaries/nbody1;67.37;8.25;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;19.5;2.39;;
+/usr/lib/x86_64-linux-gnu/libpthread-2.31.so;5.79;0.71;;
+/usr/lib/x86_64-linux-gnu/dri/iris_dri.so;3.67;0.45;;
+/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.10.0;1.54;0.19;;
+/usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0;0.77;0.09;;
+/usr/lib/x86_64-linux-gnu/ld-2.31.so;0.58;0.07;;
+/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0;0.58;0.07;;
+/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0;0.19;0.02;;

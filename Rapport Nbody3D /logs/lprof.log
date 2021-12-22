@@ -1,0 +1,43 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node anism-VivoBook-ASUSLaptop-X515EA-X515EA
+
+* Info: Process launched (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 9835)
+[1mTotal memory size:[0m 393216 B, 384 KiB, 0 MiB
+
+[1m Step    Time, s Interact/s  GFLOP/s[0m
+    0  8.593e-01  3.124e+08      7.2 *
+    1  8.734e-01  3.073e+08      7.1 *
+    2  9.220e-01  2.911e+08      6.7 *
+    3  1.119e+00  2.398e+08      5.5 
+    4  8.680e-01  3.093e+08      7.1 
+    5  8.662e-01  3.099e+08      7.1 
+    6  8.635e-01  3.108e+08      7.1 
+    7  8.780e-01  3.057e+08      7.0 
+    8  8.726e-01  3.076e+08      7.1 
+    9  8.706e-01  3.083e+08      7.1 
+-----------------------------------------------------
+[1mAverage performance:      [42m       6.9 +- 0.6 GFLOP/s[0m
+-----------------------------------------------------
+
+* Info: Process finished (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 9835)
+* Info: Dumping samples (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 9835)
+* Info: Dumping source info for callchain nodes (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 9835)
+* Info: Building/writing metadata (host anism-VivoBook-ASUSLaptop-X515EA-X515EA)
+* Info: Finished collect step (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 9835)
+
+Your experiment path is /home/anism/Téléchargements/nbody3D/0/maqao_2021-12-22_11-37-56/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#################################################################################################
+#    LEVEL    |     REPORT     |                            COMMAND                             #
+#################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/anism/Téléchargements/nbody3D/0/m  #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/anism/Téléchargements/nbody3D  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/anism/Téléchargements/nbody3D  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/anism/Téléchargements/nbody3D  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/anism/Téléchargements/nbody3D/0/m  #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/anism/Téléchargements/nbody3D  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/anism/Téléchargements/nbody3D  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/anism/Téléchargements/nbody3D  #
+#################################################################################################
+

@@ -1,0 +1,39 @@
+\documentclass[10pt]{report}
+\documentclass[10pt]{report}
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\frenchbsetup{StandardLists=true}
+\usepackage{enumitem}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[top=2cm, bottom=2cm]{geometry}
+\usepackage{geometry}
+\setcounter{secnumdepth}{3}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+\makeatletter
+\newcounter {subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection .\@alph\c@subsubsubsection}
+\newcommand\subsubsubsection{\@startsection{subsubsubsection}{4}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\newcommand*\l@subsubsubsection{\@dottedtocline{3}{10.0em}{4.1em}}
+\newcommand*{\subsubsubsectionmark}[1]{}
+\makeatother
+
+
+\begin{document}
+\include{pagedegarde}
+
+\tableofcontents
+\listoffigures
+
+\include{introduction}
+\
+\chapter*{Annexe}
+\include{webographie}
+\include{bibliographie}
+\end{document} 

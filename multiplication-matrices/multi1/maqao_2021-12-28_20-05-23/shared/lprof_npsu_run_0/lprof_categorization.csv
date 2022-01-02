@@ -1,5 +1,0 @@
-Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
-_ALL;_ALL;_ALL;0;88.89;0;9;0;11.11;0;0;0;0.05;0;0;
-arezki-Lenovo-B50-70;_ALL;_ALL;0;88.89;0;9;0;11.11;0;0;0;0.05;0;0;
-arezki-Lenovo-B50-70;4090;_ALL;0;88.89;0;9;0;11.11;0;0;0;0.05;0;0;
-arezki-Lenovo-B50-70;4090;4090;0;88.89;0;9;0;11.11;0;0;0;0.05;0;0;

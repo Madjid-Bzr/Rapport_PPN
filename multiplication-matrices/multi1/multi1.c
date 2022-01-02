@@ -22,7 +22,11 @@ void Multiplication(int  (*A)[TAILLE_TAB], int (*B)[TAILLE_TAB], int (*C)[TAILLE
   for(int k=0;k<N;k++){
     for(int j=0;j<N;j++){
       
-        C[i][j] += A[i][k] * B[k][j];
+       int sum =0;
+      
+        sum +=   A[i][k] * B[k][j];
+	
+	C[i][j] = sum;
 
       }
     }

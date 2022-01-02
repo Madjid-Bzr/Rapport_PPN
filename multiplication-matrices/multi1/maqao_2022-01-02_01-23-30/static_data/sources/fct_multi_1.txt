@@ -1,0 +1,39 @@
+/usr/include/x86_64-linux-gnu/bits/stdio2.h: 104 - 104
+--------------------------------------------------------------------------------
+
+104:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+/home/arezki/Rapport_PPN/multiplication-matrices/multi1/multi1.c: 21 - 90
+--------------------------------------------------------------------------------
+
+21:   for(int i=0;i<N;i++){
+22:   for(int k=0;k<N;k++){
+23:     for(int j=0;j<N;j++){
+24:       
+25:        int sum =0;
+26:       
+27:         sum +=   A[i][k] * B[k][j];
+28: 	
+29: 	C[i][j] = sum;
+[...]
+49: int main(int argc, char const *argv[]) {
+50: 	int N=500;
+51:   //Itialisation matrix to NULL
+52:   int A[TAILLE_TAB][TAILLE_TAB]={};
+53:   int B[TAILLE_TAB][TAILLE_TAB]={};
+54:   int C[TAILLE_TAB][TAILLE_TAB]={};
+55: 
+56: 
+57:   //Add values into element of matrice
+58:   Chargement(A,B);
+59: 
+60: 
+61:   //Display values of matrix A
+62:   for(int i=0;i<3;i++){
+63:     for(int j=0;j<3;j++){
+[...]
+70:   for(int i=0;i<3;i++){
+71:     for(int j=0;j<3;j++){
+[...]
+83:   Affichage(C);
+[...]
+90: }

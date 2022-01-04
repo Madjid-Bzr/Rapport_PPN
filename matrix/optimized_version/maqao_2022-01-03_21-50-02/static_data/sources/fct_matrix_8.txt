@@ -1,0 +1,27 @@
+/usr/include/x86_64-linux-gnu/bits/stdio2.h: 107 - 107
+--------------------------------------------------------------------------------
+
+107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+/home/benbachir/Rapport_PPN/matrix/optimized_version/matrix.c: 29 - 52
+--------------------------------------------------------------------------------
+
+29: {
+30: 	int i,j,k,sum=0;
+31: 	int matrix3[ROW][COLUMN];
+32: 	for(i=0;i<ROW;i++)
+33: 	{
+34: 		for(j=0;j<COLUMN;j++)
+35: 		{
+36: 			for(k=0;k<ROW;k++){
+37: 				sum=sum+(matrix1[i][k]*matrix2[k][j]);
+38: 			}
+39: 			matrix3[i][j]=sum;
+40: 			sum=0;
+41: 		}
+42: 	}
+43: 	printf("\n<------Result of the multiplication of two matrix is----->\n\n");
+44: 	for(i=0;i<ROW;i++)
+45: 	{
+46: 		for(j=0;j<COLUMN;j++)
+[...]
+52: }

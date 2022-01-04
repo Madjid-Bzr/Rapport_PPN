@@ -1,0 +1,5 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;33.33;50;0;6;0;0;0;0;16.67;0.04;0;0;
+benbachir-Lenovo;_ALL;_ALL;33.33;50;0;6;0;0;0;0;16.67;0.04;0;0;
+benbachir-Lenovo;8103;_ALL;33.33;50;0;6;0;0;0;0;16.67;0.04;0;0;
+benbachir-Lenovo;8103;8103;33.33;50;0;6;0;0;0;0;16.67;0.04;0;0;

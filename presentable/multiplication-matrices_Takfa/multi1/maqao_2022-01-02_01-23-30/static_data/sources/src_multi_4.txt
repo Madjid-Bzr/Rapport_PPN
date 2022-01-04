@@ -1,0 +1,11 @@
+/home/arezki/Rapport_PPN/multiplication-matrices/multi1/multi1.c: 22 - 29
+--------------------------------------------------------------------------------
+
+22:   for(int k=0;k<N;k++){
+23:     for(int j=0;j<N;j++){
+24:       
+25:        int sum =0;
+26:       
+27:         sum +=   A[i][k] * B[k][j];
+28: 	
+29: 	C[i][j] = sum;

@@ -1,0 +1,24 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody0.c: 54 - 139
+--------------------------------------------------------------------------------
+
+54:   vector c = { a.x + b.x, a.y + b.y };
+[...]
+62:   vector c = { b * a.x, b * a.y };
+[...]
+71:   vector c = { a.x - b.x, a.y - b.y };
+[...]
+80:   return sqrt(a.x * a.x + a.y * a.y);
+[...]
+127: { 
+128:   for (int i = 0; i < nbodies; i++)
+129:     {
+130:       accelerations[i].x = 0;
+131:       accelerations[i].y = 0;
+132:       
+133:       for(int j = 0; j < nbodies; j++)
+134: 	if(i != j)
+135: 	  accelerations[i] = add_vectors(accelerations[i],
+136: 					 scale_vector(GravConstant * masses[j] / (pow(mod(sub_vectors(positions[i], positions[j])), 3) + 1e7),
+137: 						      sub_vectors(positions[j], positions[i])));
+138:     }
+139: }

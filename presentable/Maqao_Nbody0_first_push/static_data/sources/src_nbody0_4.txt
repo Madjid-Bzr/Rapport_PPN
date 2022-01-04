@@ -1,0 +1,11 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody0.c: 114 - 121
+--------------------------------------------------------------------------------
+
+114:   for (int i = 0; i < nbodies - 1; i++)
+115:     for (int j = i + 1; j < nbodies; j++)
+116:       if (positions[i].x == positions[j].x &&
+117: 	  positions[i].y == positions[j].y)
+118: 	{
+119: 	  vector temp = velocities[i];
+120: 	  velocities[i] = velocities[j];
+121: 	  velocities[j] = temp;

@@ -1,0 +1,5 @@
+__printf_chk - :0
+libc-2.31.so
+_dl_find_dso_for_object - :0
+ld-2.31.so
+_dl_catch_exception - :0

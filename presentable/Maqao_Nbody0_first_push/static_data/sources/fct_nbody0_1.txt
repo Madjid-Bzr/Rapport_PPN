@@ -1,0 +1,87 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody0.c: 54 - 224
+--------------------------------------------------------------------------------
+
+54:   vector c = { a.x + b.x, a.y + b.y };
+[...]
+62:   vector c = { b * a.x, b * a.y };
+[...]
+114:   for (int i = 0; i < nbodies - 1; i++)
+115:     for (int j = i + 1; j < nbodies; j++)
+116:       if (positions[i].x == positions[j].x &&
+117: 	  positions[i].y == positions[j].y)
+118: 	{
+119: 	  vector temp = velocities[i];
+120: 	  velocities[i] = velocities[j];
+121: 	  velocities[j] = temp;
+[...]
+144:   for (int i = 0; i < nbodies; i++)
+145:     velocities[i] = add_vectors(velocities[i], accelerations[i]);
+[...]
+151:   for (int i = 0; i < nbodies; i++)
+152:     positions[i] = add_vectors(positions[i], add_vectors(velocities[i], scale_vector(0.5, accelerations[i])));
+[...]
+158:   compute_accelerations();
+[...]
+166: {
+[...]
+174:   srand(time(NULL));
+175:   
+176:   //
+177:   SDL_Init(SDL_INIT_VIDEO);
+178:   SDL_CreateWindowAndRenderer(800, 800, SDL_WINDOW_OPENGL, &window, &renderer);
+179:   
+180:   //
+181:   init_system();
+182:   
+183:   //Main loop
+184:   for (int i = 0; !quit && i < timeSteps; i++)
+185:     {	  
+186:       //
+187:       double before = (double)rdtsc();
+188:       
+189:       simulate();
+190: 
+191:       //
+192:       double after = (double)rdtsc();
+193:       
+194:       //
+195:       printf("%d %lf\n", i, (after - before));
+196:       
+197:       SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+198:       SDL_RenderClear(renderer);
+199:       
+200:       for (int i = 0; i < nbodies; i++)
+201: 	{
+202: 	  SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+203: 	  SDL_RenderDrawPoint(renderer, positions[i].x, positions[i].y);
+204: 	}
+205:       
+206:       SDL_RenderPresent(renderer);
+207:       
+208:       SDL_Delay(10);
+209:       
+210:       while (SDL_PollEvent(&event))
+211: 	if (event.type == SDL_QUIT)
+212: 	  quit = 1;
+213: 	else
+214: 	  if (event.type == SDL_KEYDOWN)
+215: 	    if (event.key.keysym.sym == SDLK_q)
+216: 	      quit = 1;
+217:     }
+218:   
+219:   SDL_DestroyRenderer(renderer);
+220:   SDL_DestroyWindow(window);
+221:   SDL_Quit();
+222:   
+223:   return 0;
+224: }
+/usr/include/x86_64-linux-gnu/bits/stdio2.h: 107 - 107
+--------------------------------------------------------------------------------
+
+107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/rdtsc.h: 5 - 7
+--------------------------------------------------------------------------------
+
+5:   __asm__ volatile ("rdtsc" : "=a" (a), "=d" (d));
+6:   
+7:   return (d << 32) | a;

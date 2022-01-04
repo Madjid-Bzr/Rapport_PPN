@@ -1,0 +1,5 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+10;nbody_op;compute_accelerations;13;nbody_op.c:91-96;Innermost;79.66;3.99;3.99;3.99;3.99;0;1;
+8;nbody_op;resolve_collisions;12;nbody_op.c:70-79;Innermost;6.08;0.3;0.3;0.3;0.3;0;1;
+9;nbody_op;compute_accelerations;13;nbody_op.c:87-96;Outermost;0.4;0.02;0.02;0.02;0.02;0;1;
+7;nbody_op;resolve_collisions;12;nbody_op.c:69-79;Outermost;0.3;0.01;0.01;0.01;0.01;0;1;

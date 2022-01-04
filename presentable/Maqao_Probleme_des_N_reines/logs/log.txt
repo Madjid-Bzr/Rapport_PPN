@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.14.6 - 6f2949440bb918b7d680937f9c542108ab5a5c3a::20211025-181241 || 2021/10/25
+
+maqao oneview --create-report=one --output-format=all -- ./queens 28 
+
+CMD:   /home/madjid/.local/bin/maqao lprof  --xp="/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/maqao_2021-11-23_11-10-09/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/maqao_2021-11-23_11-10-09/binaries/queens  28

@@ -1,0 +1,14 @@
+/home/arezki/prog/multi.c: 6 - 16
+--------------------------------------------------------------------------------
+
+6: void Chargement(int (*A)[TAILLE_TAB], int (*B)[TAILLE_TAB]){
+7: 
+8:   for(int i=0;i<TAILLE_TAB;i++){
+9:     for(int j=0;j<TAILLE_TAB;j++){
+10:       A[i][j] = rand()%9+1;
+11:       B[i][j] = rand()%9+1;
+12: 
+13:     }
+14:   }
+15: 
+16: }

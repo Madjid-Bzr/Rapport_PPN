@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.14.6 - 6f2949440bb918b7d680937f9c542108ab5a5c3a::20211025-181241 || 2021/10/25
+
+maqao oneview -R1 -binary=multi 
+
+CMD:   /bin/maqao lprof  --xp="/home/arezki/prog/maqao_2021-12-28_15-02-17/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/arezki/prog/maqao_2021-12-28_15-02-17/binaries/multi

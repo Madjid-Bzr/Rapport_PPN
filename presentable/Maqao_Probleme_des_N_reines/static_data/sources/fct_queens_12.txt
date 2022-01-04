@@ -1,0 +1,42 @@
+/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c: 58 - 96
+--------------------------------------------------------------------------------
+
+58:                            bool available[]) {
+59: 
+60: if(c>=n) return true;
+61: 
+62: bool recursive =false;
+63: bool column =false;
+64: 
+65: int* temp;
+66: int i=0;
+67: 
+68: 
+69:  while(i<n) {
+70: 
+71:  column = check_column_ok(c,i,queen_row);   
+72:  
+73: 
+74:  if(column){
+75:  
+76:   temp =queen_row;
+77:   queen_row[c]=i;
+78:   
+79:   available[i] = false; 
+80:   recursive= _find_solution(n,c+1,queen_row,available);
+81: 
+82:   if(recursive) {
+83: 	return  true;
+84:   }else{
+85: 	  queen_row[c]=temp[c];  
+86: 	  available[i] = true; 
+87: 	  i--;
+88:   }
+89:   i++;
+90:  }
+91:  i++;
+92:  
+93:  }
+94: return  false;
+95: 
+96: }

@@ -1,0 +1,14 @@
+/home/arezki/multiplication/teste 0/mat.c: 8 - 18
+--------------------------------------------------------------------------------
+
+8: void randomize(int **matrix, int l){
+9: 	
+10: 	int n;
+11: 	
+12: 	for(int i = 0; i < l; i++){
+13: 		for(int j = 0; j < l; j++){
+14: 			n = rand() % MAX_VALUE;
+15: 			matrix[i][j] = n;
+16: 		}	
+17: 	}
+18: }

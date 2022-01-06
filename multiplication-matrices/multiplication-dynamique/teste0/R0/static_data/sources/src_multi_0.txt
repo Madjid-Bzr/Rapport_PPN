@@ -1,0 +1,6 @@
+/home/arezki/multiplication/teste 0/mat.c: 13 - 15
+--------------------------------------------------------------------------------
+
+13: 		for(int j = 0; j < l; j++){
+14: 			n = rand() % MAX_VALUE;
+15: 			matrix[i][j] = n;

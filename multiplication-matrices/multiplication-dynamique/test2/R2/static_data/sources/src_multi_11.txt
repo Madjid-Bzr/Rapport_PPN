@@ -1,0 +1,13 @@
+/home/arezki/multiplication/test2/mat.c: 31 - 40
+--------------------------------------------------------------------------------
+
+31: 	for(int k = 0; k < l; k++){
+32: 		for(int j = 0; j < l; j++){
+33: 			matrix_ab[i][j] = 0;
+34: 			
+35: 				matrix_ab[i][j] += matrix_a[i][k] * matrix_b[k][j];
+36: 			}
+37: 		}
+38: 	}
+39: 	
+40: }

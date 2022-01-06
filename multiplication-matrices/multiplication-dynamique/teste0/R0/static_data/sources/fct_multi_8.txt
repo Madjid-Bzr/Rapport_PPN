@@ -1,0 +1,14 @@
+/home/arezki/multiplication/teste 0/mat.c: 29 - 39
+--------------------------------------------------------------------------------
+
+29: void mul_matrix(int **matrix_a, int **matrix_b, int **matrix_ab, int l){
+30: 	for(int i = 0; i < l; i++){
+31: 		for(int j = 0; j < l; j++){
+32: 			matrix_ab[i][j] = 0;
+33: 			for(int k = 0; k < l; k++){
+34: 				matrix_ab[i][j] += matrix_a[i][k] * matrix_b[k][j];
+35: 			}
+36: 		}
+37: 	}
+38: 	
+39: }

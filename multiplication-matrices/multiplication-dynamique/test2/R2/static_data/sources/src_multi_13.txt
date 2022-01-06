@@ -1,0 +1,6 @@
+/home/arezki/multiplication/test2/mat.c: 33 - 35
+--------------------------------------------------------------------------------
+
+33: 			matrix_ab[i][j] = 0;
+34: 			
+35: 				matrix_ab[i][j] += matrix_a[i][k] * matrix_b[k][j];

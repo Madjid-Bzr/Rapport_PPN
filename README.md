@@ -1,3 +1,5 @@
 # Rapport_PPN
 
-Utiliser MAQAO pour analyser et optimiser des applications sous Linux.
+Projet 7: Utilisation et analyse critique des rapports MAQAO pour optimiser des mini-apps.
+
+

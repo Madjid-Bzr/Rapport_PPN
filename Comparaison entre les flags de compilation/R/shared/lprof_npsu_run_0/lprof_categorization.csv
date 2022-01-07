@@ -1,0 +1,5 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;0;94.96;0;5134;0;0;0;0;0;25.64;5.04;0;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;_ALL;_ALL;0;94.96;0;5134;0;0;0;0;0;25.64;5.04;0;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;27632;_ALL;0;94.96;0;5134;0;0;0;0;0;25.64;5.04;0;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;27632;27632;0;94.96;0;5134;0;0;0;0;0;25.64;5.04;0;

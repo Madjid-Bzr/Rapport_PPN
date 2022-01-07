@@ -130,9 +130,9 @@ if (obj) {
   }
 }
 </script>
-<h3 style="background-color: var(--header_background);color: var(--header_font);margin: 0px;padding: 5px 0px 5px 10px;border: 1px solid var(--table_border);border-radius: 5px;" class="_header">nbody.g1 - 2022-01-07 02:07:00 - MAQAO 2.14.6</h3>
+<h3 style="background-color: var(--header_background);color: var(--header_font);margin: 0px;padding: 5px 0px 5px 10px;border: 1px solid var(--table_border);border-radius: 5px;" class="_header">nbody.g1 - 2022-01-07 11:43:43 - MAQAO 2.14.6</h3>
 <p>Help is available by moving the cursor above any <img src="images/help_icon_20.png" style="vertical-align: middle;background-color:var(--fixed_box_header_background);"></img> symbol or by checking <a href="https://maqao.exascale-computing.eu/documentation.html">MAQAO website</a>.</p>
-<div class="_accordion_box" style="margin-top:2px;"><h3 class="_header" onclick="_click_accordion_header(this)"><span class="_accordion_box_button">&#x25BC;</span>Stylizer<span class="tooltip-maqao-button help-maqao" title="Basic checkings that the run is performed according to standards"></span><span class="_report_header_color_box" style="background-color:#FF3333;"><span style="background-color:#66cc00;display:inline-block;width:73%;">&nbsp;</span></span></h3><div class="_content">
+<div class="_accordion_box collapsed" style="margin-top:2px;"><h3 class="_header collapsed" onclick="_click_accordion_header(this)"><span class="_accordion_box_button">&#x25B6;</span>Stylizer<span class="tooltip-maqao-button help-maqao" title="Basic checkings that the run is performed according to standards"></span><span class="_report_header_color_box" style="background-color:#FF3333;"><span style="background-color:#66cc00;display:inline-block;width:100%;">&nbsp;</span></span></h3><div class="_content collapsed">
 <div class="row">
   <div class="column" style="background-color: #8cd98c;">
     <h2>Good</h2>
@@ -142,14 +142,13 @@ if (obj) {
     <p class="long"></p>
     <p class="short">[3 / 3] Helper debug compilation options -g and -fno-omit-frame-pointer are used</p>
     <p class="long">-g option gives access to debugging informations, such are source locations and -fno-omit-frame-pointer improve the accuracy of callchains found during the application profiling.</p>
+    <p class="short">[4 / 4] Application is long enough (68.65 s)</p>
+    <p class="long">To have good quality measurments, it is advised that the application execution time is greater than 10 seconds.</p>
     <p class="short">[2 / 2] Application is correctly profiled ("Others" category represents 0 % of the execution time)</p>
     <p class="long">To have a representative profiling, it is advised that the category "Others" represents less than 20% of the execution time in order to analyze as much as possible of the user code</p>
   </div>
   <div class="column" style="background-color: #ff9999;">
     <h2>Bad</h2>
-    <p class="short">[0 / 4] Application is too short (5.87 s)</p>
-    <p class="long">If the overall application execution time is less than 10 seconds, many of the measurements at function or loop level will very likely be under the measurement quality threshold (0,1 seconds).
-Rerun to increase runtime duration: for example use a larger dataset or include a repetition loop.</p>
   </div>
 </div>
 </div></div>

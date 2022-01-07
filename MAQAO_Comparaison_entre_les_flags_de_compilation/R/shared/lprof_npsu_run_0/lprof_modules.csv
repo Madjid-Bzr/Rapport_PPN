@@ -1,3 +1,4 @@
 name;time_p;time_s;cpi_ratio;
-/home/anism/Bureau/Comparaison/maqao_2022-01-07_02-06-28/binaries/nbody.g;94.96;24.34;;
-/usr/lib/x86_64-linux-gnu/libm-2.31.so;5.04;1.29;;
+/home/anism/Bureau/Comparaison/maqao_2022-01-07_22-13-29/binaries/nbody.g;93.33;283.98;;
+/usr/lib/x86_64-linux-gnu/libm-2.31.so;6.67;20.3;;
+kernel;0;0.01;;

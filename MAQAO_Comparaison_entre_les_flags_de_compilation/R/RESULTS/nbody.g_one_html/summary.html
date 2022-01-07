@@ -130,13 +130,17 @@ if (obj) {
   }
 }
 </script>
-<h3 style="background-color: var(--header_background);color: var(--header_font);margin: 0px;padding: 5px 0px 5px 10px;border: 1px solid var(--table_border);border-radius: 5px;" class="_header">nbody.g - 2022-01-07 02:06:28 - MAQAO 2.14.6</h3>
+<h3 style="background-color: var(--header_background);color: var(--header_font);margin: 0px;padding: 5px 0px 5px 10px;border: 1px solid var(--table_border);border-radius: 5px;" class="_header">nbody.g - 2022-01-07 22:13:29 - MAQAO 2.14.6</h3>
 <p>Help is available by moving the cursor above any <img src="images/help_icon_20.png" style="vertical-align: middle;background-color:var(--fixed_box_header_background);"></img> symbol or by checking <a href="https://maqao.exascale-computing.eu/documentation.html">MAQAO website</a>.</p>
-<div class="_accordion_box" style="margin-top:2px;"><h3 class="_header" onclick="_click_accordion_header(this)"><span class="_accordion_box_button">&#x25BC;</span>Stylizer<span class="tooltip-maqao-button help-maqao" title="Basic checkings that the run is performed according to standards"></span><span class="_report_header_color_box" style="background-color:#FF3333;"><span style="background-color:#66cc00;display:inline-block;width:53%;">&nbsp;</span></span></h3><div class="_content">
+<div class="_accordion_box" style="margin-top:2px;"><h3 class="_header" onclick="_click_accordion_header(this)"><span class="_accordion_box_button">&#x25BC;</span>Stylizer<span class="tooltip-maqao-button help-maqao" title="Basic checkings that the run is performed according to standards"></span><span class="_report_header_color_box" style="background-color:#FF3333;"><span style="background-color:#66cc00;display:inline-block;width:80%;">&nbsp;</span></span></h3><div class="_content">
 <div class="row">
   <div class="column" style="background-color: #8cd98c;">
     <h2>Good</h2>
-    <p class="short">[4 / 4] Application is long enough (25.64 s)</p>
+    <p class="short">[3 / 3] Architecture specific option -march=tigerlake is used</p>
+    <p class="long"></p>
+    <p class="short">[3 / 3] Helper debug compilation options -g and -fno-omit-frame-pointer are used</p>
+    <p class="long">-g option gives access to debugging informations, such are source locations and -fno-omit-frame-pointer improve the accuracy of callchains found during the application profiling.</p>
+    <p class="short">[4 / 4] Application is long enough (304.29 s)</p>
     <p class="long">To have good quality measurments, it is advised that the application execution time is greater than 10 seconds.</p>
     <p class="short">[2 / 2] Application is correctly profiled ("Others" category represents 0 % of the execution time)</p>
     <p class="long">To have a representative profiling, it is advised that the category "Others" represents less than 20% of the execution time in order to analyze as much as possible of the user code</p>
@@ -145,10 +149,6 @@ if (obj) {
     <h2>Bad</h2>
     <p class="short">[0 / 3] Optimization level option not used</p>
     <p class="long">To have better performances, it is advised to help the compiler by using a proper optimization level (-O2 of higher). Warning, depending on compilers, faster optimization levels can decrease numeric accuracy.</p>
-    <p class="short">[0 / 3] Architecture specific option is not used</p>
-    <p class="long">-march=x86-64 option is used but it is not specific enought to produce efficient code.</p>
-    <p class="short">[2 / 3] Helper debug compilation option -fno-omit-frame-pointer is missing</p>
-    <p class="long">-fno-omit-frame-pointer improves the accuracy of callchains found during the application profiling.</p>
   </div>
 </div>
 </div></div>

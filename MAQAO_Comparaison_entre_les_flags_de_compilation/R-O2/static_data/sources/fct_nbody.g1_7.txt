@@ -1,0 +1,54 @@
+/home/anism/Bureau/Comparaison/nbody1.c: 22 - 72
+--------------------------------------------------------------------------------
+
+22: {   
+23:  
+24:   for (u64 i = 0; i < n; i+=4)
+25:     {
+26:       //
+27:       u64 r1 = (u64)rand();
+28:       u64 r2 = (u64)rand();
+29:       f32 sign = (r1 > r2) ? 1 : -1;
+30:       
+31:       //
+32:       p.x[i] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+33:       p.y[i] = (f32)rand() * (1/(f32)RAND_MAX);
+34:       p.z[i] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+35: 
+36:       //
+37:       p.vx[i] = (f32)rand() * (1/(f32)RAND_MAX);
+38:       p.vy[i] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+39:       p.vz[i]= (f32)rand() * (1/(f32)RAND_MAX);
+40: 
+41:       //
+42:       p.x[i+1] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+43:       p.y[i+1] = (f32)rand() * (1/(f32)RAND_MAX);
+44:       p.z[i+1] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+45: 
+46:       //
+47:       p.vx[i+1] = (f32)rand() * (1/(f32)RAND_MAX);
+48:       p.vy[i+1] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+49:       p.vz[i+1]= (f32)rand() * (1/(f32)RAND_MAX);
+50: 
+51:       //
+52:       p.x[i+2] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+53:       p.y[i+2] = (f32)rand() * (1/(f32)RAND_MAX);
+54:       p.z[i+2] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+55: 
+56:       //
+57:       p.vx[i+2] = (f32)rand() * (1/(f32)RAND_MAX);
+58:       p.vy[i+2] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+59:       p.vz[i+2]= (f32)rand() * (1/(f32)RAND_MAX);
+60: 
+61: 
+62:       //
+63:       p.x[i+3] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+64:       p.y[i+3] = (f32)rand() * (1/(f32)RAND_MAX);
+65:       p.z[i+3] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+66: 
+67:       //
+68:       p.vx[i+3] = (f32)rand() * (1/(f32)RAND_MAX);
+69:       p.vy[i+3] = sign * (f32)rand() * (1/(f32)RAND_MAX);
+70:       p.vz[i+3]= (f32)rand() * (1/(f32)RAND_MAX);
+71:     }
+72: }

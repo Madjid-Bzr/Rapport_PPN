@@ -4,4 +4,4 @@ MAQAO 2.14.6 - 6f2949440bb918b7d680937f9c542108ab5a5c3a::20211025-181241 || 2021
 
 maqao oneview --create-report=one --executable=./nbody.g3 
 
-CMD:   /usr/bin/maqao lprof  --xp="/home/anism/Bureau/Comparaison/maqao_2022-01-07_02-07-25/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/anism/Bureau/Comparaison/maqao_2022-01-07_02-07-25/binaries/nbody.g3
+CMD:   /usr/bin/maqao lprof  --xp="/home/anism/Bureau/Comparaison/maqao_2022-01-07_11-46-49/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/anism/Bureau/Comparaison/maqao_2022-01-07_11-46-49/binaries/nbody.g3

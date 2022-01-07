@@ -17,7 +17,7 @@ Table:new({
 	["exe_args"] = "";
 	["keep_ext_threads"] = false;
 	["kill_signals"] = "";
-	["exe_path"] = "/home/anism/Bureau/Comparaison/maqao_2022-01-07_02-07-00/binaries/nbody.g1";
+	["exe_path"] = "/home/anism/Bureau/Comparaison/maqao_2022-01-07_11-43-43/binaries/nbody.g1";
 	["libs_to_disass"] = "off";
 	["max_processes"] = 0;
 	["use_OS_timers"] = false;
@@ -30,7 +30,7 @@ Table:new({
 	["backtrace_mode"] = 1;
 	["user_guided"] = -1;
 	["evts_profiles"] = "";
-	["experiment_path"] = "/home/anism/Bureau/Comparaison/maqao_2022-01-07_02-07-00/tools/lprof_npsu_run_0";
+	["experiment_path"] = "/home/anism/Bureau/Comparaison/maqao_2022-01-07_11-43-43/tools/lprof_npsu_run_0";
 	["ign_signals"] = "";
 	["cpu_clock_rate"] = 0;
 	["max_callchain_len"] = 20;

@@ -1,32 +1,32 @@
 
 * Info: Selecting the 'perf-low-ppn' engine for node anism-VivoBook-ASUSLaptop-X515EA-X515EA
 
-* Info: Process launched (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 27739)
-[1mTotal memory size:[0m 786432 B, 768 KiB, 0 MiB
+* Info: Process launched (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5705)
+[1mTotal memory size:[0m 2706432 B, 2643 KiB, 2 MiB
 
-n= 16384 
+n= 56384 
 [1m Step    Time, s Interact/s  GFLOP/s[0m
-    0  5.864e-01  4.577e+08     10.5 *
-    1  6.012e-01  4.464e+08     10.3 *
-    2  6.006e-01  4.469e+08     10.3 *
-    3  6.017e-01  4.461e+08     10.3 
-    4  6.006e-01  4.469e+08     10.3 
-    5  6.010e-01  4.466e+08     10.3 
-    6  6.012e-01  4.465e+08     10.3 
-    7  6.012e-01  4.465e+08     10.3 
-    8  6.042e-01  4.443e+08     10.2 
-    9  5.996e-01  4.476e+08     10.3 
+    0  8.068e+00  3.940e+08      9.1 *
+    1  8.225e+00  3.865e+08      8.9 *
+    2  7.914e+00  4.017e+08      9.2 *
+    3  7.095e+00  4.481e+08     10.3 
+    4  6.837e+00  4.650e+08     10.7 
+    5  6.835e+00  4.652e+08     10.7 
+    6  6.810e+00  4.668e+08     10.7 
+    7  6.843e+00  4.646e+08     10.7 
+    8  6.880e+00  4.621e+08     10.6 
+    9  6.872e+00  4.626e+08     10.6 
 -----------------------------------------------------
-[1mAverage performance:      [42m      10.3 +- 0.0 GFLOP/s[0m
+[1mAverage performance:      [42m      10.6 +- 0.1 GFLOP/s[0m
 -----------------------------------------------------
 
-* Info: Process finished (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 27739)
-* Info: Dumping samples (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 27739)
-* Info: Dumping source info for callchain nodes (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 27739)
+* Info: Process finished (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5705)
+* Info: Dumping samples (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5705)
+* Info: Dumping source info for callchain nodes (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5705)
 * Info: Building/writing metadata (host anism-VivoBook-ASUSLaptop-X515EA-X515EA)
-* Info: Finished collect step (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 27739)
+* Info: Finished collect step (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5705)
 
-Your experiment path is /home/anism/Bureau/Comparaison/maqao_2022-01-07_02-07-13/tools/lprof_npsu_run_0
+Your experiment path is /home/anism/Bureau/Comparaison/maqao_2022-01-07_11-45-01/tools/lprof_npsu_run_0
 
 To display your profiling results:
 #################################################################################################

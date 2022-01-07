@@ -94,25 +94,25 @@ addLoadEvent(function(){
       <td><button type="button" style="cursor:pointer;" onclick="set_next_ldbal_input ();">&rarr;</button></td>
     </tr>
   </table>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_79" style="height:500px" ></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_111" style="height:500px" ></div></div>
 <script class="code">
 </script>
-<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_80" style="height:500px" ></div></div>
+<div style="margin: 10px; overflow-x:auto; overflow-y:hidden;"><div id="chart_cat_112" style="height:500px" ></div></div>
 <script class="code">
 </script>
   <script>
 function set_ldbal_input () {
   var selector_run  = document.getElementById ("ldbal_select_run");
   // Clear placeholder content and update their size
-  document.getElementById("chart_cat_79").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_79").getBoundingClientRect().width);
-  document.getElementById("chart_cat_80").innerHTML = "";
-  var _width = Math.floor(document.getElementById("chart_cat_80").getBoundingClientRect().width);
+  document.getElementById("chart_cat_111").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_111").getBoundingClientRect().width);
+  document.getElementById("chart_cat_112").innerHTML = "";
+  var _width = Math.floor(document.getElementById("chart_cat_112").getBoundingClientRect().width);
   // According to selector, draw both charts
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['anism-VivoBook-ASUSLaptop-X515EA-X515EA_27632_27632'];
-    var data = [{value: 2.57}];
+    var ordinals = ['anism-VivoBook-ASUSLaptop-X515EA-X515EA_9771_9771'];
+    var data = [{value: 2.61}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 400;
@@ -127,7 +127,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_79')
+    const svg = d3.select('#chart_cat_111')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -183,13 +183,13 @@ function set_ldbal_input () {
       .text("Coverage");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_79')
+      .attr('id', 'zoom_chart_111')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_79_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_111_'+i;})
       .attr('x', function(d, i){
         return xScale(i) - xBand.bandwidth()*0.9/2
       })
@@ -228,14 +228,14 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_79_0").click( function () {
-    window.open("../topo/run_0_anism-VivoBook-ASUSLaptop-X515EA-X515EA_27632_27632.html");
+  $("#zoom_chart_111_0").click( function () {
+    window.open("../topo/run_0_anism-VivoBook-ASUSLaptop-X515EA-X515EA_9771_9771.html");
   });
   }
   if (selector_run.value  == "1") {
   $(document).ready(function(){
-    var ordinals = ['anism-VivoBook-ASUSLaptop-X515EA-X515EA_27632_27632'];
-    var data = [{value: 0.66}];
+    var ordinals = ['anism-VivoBook-ASUSLaptop-X515EA-X515EA_9771_9771'];
+    var data = [{value: 7.95}];
     var widthgl  = _width;
     var widthin  = _width;
     var heightgl = 400;
@@ -250,7 +250,7 @@ function set_ldbal_input () {
     height = heightgl - margin.top - margin.bottom,
     radius = (Math.min(width, height) / 2) - 10,
     node;
-    const svg = d3.select('#chart_cat_80')
+    const svg = d3.select('#chart_cat_112')
         .append('svg')
         .attr('width', widthin)
         .attr('height', heightin)
@@ -306,13 +306,13 @@ function set_ldbal_input () {
       .text("Time");
     let bars = svg.append('g')
       .attr('clip-path','url(#my-clip-path)')
-      .attr('id', 'zoom_chart_80')
+      .attr('id', 'zoom_chart_112')
       .selectAll('.bar')
       .data(data)
       .enter()
       .append('rect')
       .attr('class', 'bar')
-      .attr('id', function (d, i){ return 'zoom_chart_80_'+i;})
+      .attr('id', function (d, i){ return 'zoom_chart_112_'+i;})
       .attr('x', function(d, i){
         return xScale(i) - xBand.bandwidth()*0.9/2
       })
@@ -351,8 +351,8 @@ function set_ldbal_input () {
         bars.attr("transform", "translate(" + d3.event.transform.x+",0)scale(" + d3.event.transform.k + ",1)")
     }
   });
-  $("#zoom_chart_80_0").click( function () {
-    window.open("../topo/run_0_anism-VivoBook-ASUSLaptop-X515EA-X515EA_27632_27632.html");
+  $("#zoom_chart_112_0").click( function () {
+    window.open("../topo/run_0_anism-VivoBook-ASUSLaptop-X515EA-X515EA_9771_9771.html");
   });
   }
 }

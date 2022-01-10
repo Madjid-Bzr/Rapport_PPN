@@ -1,0 +1,59 @@
+/home/anism/Téléchargements/nbody3D/0/nbody1.c: 50 - 105
+--------------------------------------------------------------------------------
+
+50: {
+51:   //
+52:   const f32 softening = 1e-20;
+53: 
+54:   //
+55:   for (u64 i = 0; i < n; i++)
+56:     {
+57:       //
+58:       f32 fx = 0.0;
+59:       f32 fy = 0.0;
+60:       f32 fz = 0.0;
+61: 
+62:       //23 floating-point operations
+63:       for (u64 j = 0; j < n; j++)
+64: 	{
+65: 	  //Newton's law
+66: 	  const f32 dx = p->x[j] - p->x[i]; //1
+67: 	  const f32 dy = p->y[j] - p->y[i]; //2
+68: 	  const f32 dz = p->z[j] - p->z[i]; //3
+69: 	  const f32 d_2 = (dx * dx) + (dy * dy) + (dz * dz) + softening; //9
+70: 	  const f32 d_3_over_2 = pow(d_2, 3.0 / 2.0); //11
+71: 
+72: 	  //Net force
+73: 	  fx += dx / d_3_over_2; //13
+74: 	  fy += dy / d_3_over_2; //15
+75: 	  fz += dz / d_3_over_2; //17
+76: 	}
+77: 
+78:       //
+79:       p->vx[i] += dt * fx; //19
+80:       p->vy[i] += dt * fy; //21
+81:       p->vz[i] += dt * fz; //23
+82:     }
+83: 
+84:   //3 floating-point operations
+85:   for (u64 i = 0; i < n; i+=4)
+86:     {
+87:       p->x[i] += dt * p->vx[i];
+88:       p->y[i] += dt * p->vy[i];
+89:       p->z[i] += dt * p->vz[i];
+90: 
+91:       p->x[i+1] += dt * p->vx[i+1];
+92:       p->y[i+1] += dt * p->vy[i+1];
+93:       p->z[i+1] += dt * p->vz[i+1];
+94: 
+95: 
+96:       p->x[i+2] += dt * p->vx[i+2];
+97:       p->y[i+2] += dt * p->vy[i+2];
+98:       p->z[i+2] += dt * p->vz[i+2];
+99: 
+100: 
+101:       p->x[i+3] += dt * p->vx[i+3];
+102:       p->y[i+3] += dt * p->vy[i+3];
+103:       p->z[i+3] += dt * p->vz[i+3];
+104:     }
+105: }

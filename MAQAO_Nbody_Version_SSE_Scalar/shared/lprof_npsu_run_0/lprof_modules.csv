@@ -1,0 +1,13 @@
+name;time_p;time_s;cpi_ratio;
+/home/anism/Bureau/Test Nbody Version Scalaire /maqao_2021-12-05_22-39-36/binaries/nbody_Version_SSE_Scalar;81.35;3.18;;
+/usr/lib/x86_64-linux-gnu/dri/swrast_dri.so;13.96;0.55;;
+/usr/lib/x86_64-linux-gnu/libpthread-2.31.so;1.64;0.06;;
+/usr/lib/x86_64-linux-gnu/libc-2.31.so;1.09;0.04;;
+/usr/lib/x86_64-linux-gnu/libX11.so.6.3.0;0.44;0.02;;
+anon;0.33;0.01;;
+/usr/lib/x86_64-linux-gnu/libGLX_mesa.so.0.0.0;0.33;0.01;;
+/usr/lib/x86_64-linux-gnu/libSDL2-2.0.so.0.10.0;0.33;0.01;;
+/usr/lib/x86_64-linux-gnu/ld-2.31.so;0.22;0.01;;
+/usr/lib/x86_64-linux-gnu/libglapi.so.0.0.0;0.11;0;;
+/usr/lib/x86_64-linux-gnu/libxcb.so.1.1.0;0.11;0;;
+kernel;0.11;0;;

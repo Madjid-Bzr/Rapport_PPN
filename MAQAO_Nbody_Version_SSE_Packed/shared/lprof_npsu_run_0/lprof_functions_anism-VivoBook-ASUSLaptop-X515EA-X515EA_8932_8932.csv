@@ -1,0 +1,15 @@
+function_id;module;function_name;source_info;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;cats;
+17;nbody_Version_SSE_Packed;compute_accelerations;nbody_Version_SSE_Packed.c:66-223;97.89;7.87;;;;;;"100,0,0,0,0,0,0,0,0,0";
+1;nbody_Version_SSE_Packed;main;stdio2.h:107-107,nbody_Version_SSE_Packed.c:41-308;0.75;0.06;;;;;;"100,0,0,0,0,0,0,0,0,0";
+849;libSDL2-2.0.so.0.10.0;SDL_DYNAPI_entry;;0.37;0.03;;;;;;"0,0,0,0,0,0,0,0,0,100";
+814;swrast_dri.so;__driDriverGetExtensions_d3d12;;0.19;0.01;;;;;;"0,0,0,0,0,0,0,0,0,100";
+1902;libc-2.31.so;__nss_database_lookup;;0.12;0.01;;;;;;"0,0,0,0,0,0,0,0,0,100";
+584;libc-2.31.so;pthread_attr_setschedparam;;0.12;0.01;;;;;;"0,0,0,0,0,100,0,0,0,0";
+348;libc-2.31.so;psiginfo;;0.12;0.01;;;;;;"0,0,0,0,100,0,0,0,0,0";
+911;libX11.so.6.3.0;_XimLcctstoutf8;;0.06;0;;;;;;"0,0,0,0,0,0,0,0,0,100";
+630;libX11.so.6.3.0;_XEventsQueued;;0.06;0;;;;;;"0,0,0,0,0,0,0,0,0,100";
+590;libX11.so.6.3.0;XStringToKeysym;;0.06;0;;;;;;"0,0,0,0,0,0,0,0,0,100";
+568;libc-2.31.so;pthread_setcanceltype;;0.06;0;;;;;;"0,0,0,0,0,100,0,0,0,0";
+80;libxcb.so.1.1.0;xcb_poll_for_reply64;;0.06;0;;;;;;"0,0,0,0,0,0,0,0,0,100";
+19;libexpat.so.1.6.11;.text@start;;0.06;0;;;;;;"0,0,0,0,100,0,0,0,0,0";
+11;ld-2.31.so;_dl_rtld_di_serinfo;;0.06;0;;;;;;"0,0,0,0,100,0,0,0,0,0";

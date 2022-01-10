@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper,onecolumn,openright,oneside]{report}
+\usepackage[utf8]{inputenc}
+\input{preambule}
+\usepackage{url}
+\makeatletter
+\renewcommand*{\thesection}{\arabic{section}}
+\usepackage{booktabs}
+
+\makeatother
+
+\lstdefinestyle{style}{%
+backgroundcolor=\color{gray!8},
+basicstyle=\ttfamily\small,
+commentstyle=\color{green!60!black},
+keywordstyle=\color{blue},
+stringstyle=\color{blue!50!red},
+showstringspaces=false,
+%captionpos=b,
+numbers=none,
+numberstyle=\footnotesize\color{red},
+numbersep=10pt,
+%stepnumber=2,
+breaklines=true,
+inputpath=code
+}
+
+\lstdefinestyle{style1}{%
+backgroundcolor=\color{gray!8},
+basicstyle=\ttfamily\small,
+commentstyle=\color{green!60!black},
+keywordstyle=\color{blue},
+stringstyle=\color{blue!50!red},
+showstringspaces=false,
+%captionpos=b,
+numbers=left,
+numberstyle=\footnotesize\color{red},
+numbersep=10pt,
+%stepnumber=2,
+breaklines=true,
+inputpath=code
+}
+\begin{document}
+
+
+\section{Critique}
+\subsection{Les points fort de MAQAO}
+\subsubsection{Les flags de compilation }
+MAQAO nous a beaucoup aidée lors de choix des options de compilations. Voici un exemple où on a juste changer les flags de compilations, on gardent le même code et la même machine.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.38]{Images/Nbody2D.png}
+    \caption{Nbody2D 1er version modification seulement des flags de compilation}
+    
+\end{figure}
+On a ganger *10 la vitesse d'executions par rapport sans les bons flags de compilations.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.38]{Images/nbody2d.png}
+    \caption{Nbody2D Information sur la machine}
+    
+\end{figure}
+
+\subsubsection{Chagement de l'orde des boucles }
+Voici une boucle de multiplication de matrices 
+\begin{lstlisting}[caption=avant permutation,style=style1,language=C]
+void mul_matrix(int **matrix_a, int **matrix_b, int **matrix_ab, int l){
+	for(int i = 0; i < l; i++){
+		for(int j = 0; j < l; j++){
+			matrix_ab[i][j] = 0;
+			for(int k = 0; k < l; k++){
+				matrix_ab[i][j] += matrix_a[i][k] * matrix_b[k][j];
+			} } } }
+\end{lstlisting}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{Images/CQA.png}
+    \caption{Suggestion de MAQAO de permuter les boucles}
+    
+\end{figure}
+
+\begin{lstlisting}[caption=après permutation,style=style1,language=C]
+void mul_matrix(int **matrix_a, int **matrix_b, int **matrix_ab, int l){
+	for(int i = 0; i < l; i++){
+	for(int k = 0; k < l; k++){
+		for(int j = 0; j < l; j++){
+			matrix_ab[i][j] = 0;
+			
+				matrix_ab[i][j] += matrix_a[i][k] * matrix_b[k][j];
+	}}}}
+\end{lstlisting}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.38]{Images/COp.png}
+    \caption{Comparaison entre avant et après permutations des boucles}
+    
+\end{figure}
+\textbf{Remarque : }On remarque que on changent seulement l'ordre des boucles on a ganger on temps d'execution et on vectorisation.\\
+\subsubsection{Les autres points fort }
+MAQAO nous a permet d'optimiser le programme de Nbody3D qu'on illustrer où début de notre rapport avec tout ces indications dans les different onglet chagement de structeur de  AoS à SoA, l'ajout des bons flags de compilation et les indications sur la vectorisations. 
+
+
+\subsection{Les points negative de MAQAO}
+Malgré ses point fort MAQAO nous a pas aidé dans tous ses suggestions meme des fois ils nous a induit en erreur ou ils nous dits de faire des modifications que on a déjà fait voici quelque exemple remarqué ou cours de notre manipulation de MAQAO.
+\subsubsection{MAQAO et CQA}
+Ne ce base pas sur le code source MAQAO travail execulisevemment aux niveaux binaire il est obligé un peu de deviner a quoi ressemble le code source et à quoi ressemble la compilation ils savent pas si on a changé le code source tous ce qu'ils regarde c'est le code asssembleur qui resulte.
+
+On peut avoir des cas ou il contine de dire essayé cette solution ou bien modifier cette boucle alor que on base la modification à était déjà faite.
+
+\textbf{Exemple :} Si on change une partie dans le code source et que celle ci ne change pas son code assembleur CQA vas dire rien n'a changé.\textcolor{red}{Une limite de MAQAO}.
+\begin{enumerate}
+    \item \textbf{Cas de possix\_memaligne :} Maqao nous a demandé d'aligner notre mémoire car elle n'était pas alignée en nous proposant de l'aligne avec la fonctions posix\_memealign, malgré qu'on a fait le nécessaire pour ça, on a toujours cette suggestion au niveau de la dernière analyse.
+
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[scale=0.4]{Images/posix_mema.png}
+    \caption{Notre programme}
+\end{figure}
+\begin{figure}[H] 
+    \centering
+    \includegraphics[scale=0.6]{Images/posix.png}
+    \caption{La sortie CQA}
+\end{figure}
+
+    \item\textbf{ Cas FMA (fused multiply-add) :} Malgré le changement de toute les multiplications et additions avec le format demandé, on retrouve toujours la même suggestion dans notre rapport.
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[scale=0.35]{Images/FMA.png}
+    \caption{FMA avant}
+\end{figure}
+\begin{figure}[H] 
+    \centering
+    \includegraphics[scale=0.35]{Images/FMA2.png}
+    \caption{FMA après}
+\end{figure}
+
+
+
+
+\item\textbf{Aspect algorithmique:}
+MAQAO regarde l'aspect vectorization et les operations arithmitique combien y'a d'addition, multiplication et division, il ne peut pas savoir en terme d'algorithmique combien en moin on peut avoir de calcul ADD, MUL, SUB et DIV.\\ 
+
+\textbf{Exemple :}
+
+\begin{minipage}[c]{.46\linewidth}
+              \includegraphics[scale=0.6]{Images/sqrt3.png}
+           \end{minipage} \hfill
+         \begin{minipage}[c]{.46\linewidth}
+              \includegraphics[scale=0.6]{Images/sqrt4.png}
+           \end{minipage}
+          
+Dans cette exemple on aurait pas besoin de multiplier tmp trois fois il suffisé seulement de le multiplie une fois avec d\_4 MAQAO n'arrive pas a simplifie les opération arithmitique.\\
+           
+\item Malgré que toute ces modifications que maqao nous a proposé, on a toujours pas eu un résulat de 100\% au niveau de la Vectorization Efficiency, après recherche de notre coté on a trouvé que la puissance (POW) est une instruction complexe donc on du la changer à une racine carée (SQRT) pour régler notre problème de Vectorization Efficiency et avoir un fully vectorized. Maqao nous a pas aidé dans cette étape pour pouvoir utiliser toute la longueur des registres, c'est par nous même que nous avons trouvé cette instruction complexe qu'on devait changer pour avoir un resultat plus performant.
+\end{enumerate}
+
+\subsubsection{Incompréhension de l'origine de cette erreur :}
+\begin{lstlisting}[style=style]
+PANIC: unprotected error in call to Lua API ([string "lua_oneview"]:40457: attempt to index local '__path__' (a nil value))
+\end{lstlisting}
+
+Le programme s'execute le plus normalement possible avec un temps d'execution élevé mais cette erreur ce manifeste et que on comprend pas. 
+
+
+\end{document}
+
+

@@ -1,0 +1,18 @@
+/home/anism/Bureau/Comparaison/nbody.c: 89 - 103
+--------------------------------------------------------------------------------
+
+89:       for (u64 j = 0; j < n; j++)
+90:   {
+91:     //Newton's law
+92:     const f32 dx = p.x[j] - p.x[i]; //1
+93:     const f32 dy = p.y[j] - p.y[i]; //2
+94:     const f32 dz = p.z[j] - p.z[i]; //3
+95:     const f32 d_2 = (dx * dx) + (dy * dy) + (dz * dz) + softening; //9
+96:     const f32 t=sqrt(d_2);
+97:     const f32 d_3_over_2 = t*t*t; //11
+98:     
+99: 
+100:     //Net force
+101:     fx += (dx * (1/d_3_over_2)); //13
+102:     fy += (dy * (1/d_3_over_2)); //15
+103:     fz += (dz * (1/d_3_over_2)); //17

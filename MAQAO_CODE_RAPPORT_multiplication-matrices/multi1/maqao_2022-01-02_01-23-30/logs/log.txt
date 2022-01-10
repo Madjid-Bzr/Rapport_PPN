@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.14.6 - 6f2949440bb918b7d680937f9c542108ab5a5c3a::20211025-181241 || 2021/10/25
+
+maqao oneview -R1 -binary=multi 
+
+CMD:   /bin/maqao lprof  --xp="/home/arezki/Rapport_PPN/multiplication-matrices/multi1/maqao_2022-01-02_01-23-30/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/arezki/Rapport_PPN/multiplication-matrices/multi1/maqao_2022-01-02_01-23-30/binaries/multi

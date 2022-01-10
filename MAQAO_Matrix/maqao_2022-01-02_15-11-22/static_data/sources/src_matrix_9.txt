@@ -1,0 +1,6 @@
+/home/benbachir/Documents/matrix/matrix.c: 46 - 48
+--------------------------------------------------------------------------------
+
+46: 		for(j=0;j<COLUMN;j++)
+47: 		{
+48: 			printf("%d\t",matrix3[i][j]);

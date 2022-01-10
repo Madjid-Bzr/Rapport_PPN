@@ -1,0 +1,44 @@
+
+* Info: Selecting the 'perf-low-ppn' engine for node anism-VivoBook-ASUSLaptop-X515EA-X515EA
+
+* Info: Process launched (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5630)
+[1mTotal memory size:[0m 2706432 B, 2643 KiB, 2 MiB
+
+n= 56384 
+[1m Step    Time, s Interact/s  GFLOP/s[0m
+    0  6.845e+00  4.645e+08     10.7 *
+    1  6.802e+00  4.674e+08     10.8 *
+    2  6.822e+00  4.660e+08     10.7 *
+    3  6.770e+00  4.696e+08     10.8 
+    4  6.769e+00  4.697e+08     10.8 
+    5  6.771e+00  4.695e+08     10.8 
+    6  6.765e+00  4.699e+08     10.8 
+    7  6.776e+00  4.692e+08     10.8 
+    8  7.029e+00  4.523e+08     10.4 
+    9  7.295e+00  4.358e+08     10.0 
+-----------------------------------------------------
+[1mAverage performance:      [42m      10.6 +- 0.3 GFLOP/s[0m
+-----------------------------------------------------
+
+* Info: Process finished (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5630)
+* Info: Dumping samples (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5630)
+* Info: Dumping source info for callchain nodes (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5630)
+* Info: Building/writing metadata (host anism-VivoBook-ASUSLaptop-X515EA-X515EA)
+* Info: Finished collect step (host anism-VivoBook-ASUSLaptop-X515EA-X515EA, process 5630)
+
+Your experiment path is /home/anism/Bureau/Comparaison/maqao_2022-01-07_11-43-43/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#################################################################################################
+#    LEVEL    |     REPORT     |                            COMMAND                             #
+#################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/anism/Bureau/Comparaison/maqao_2022  #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/anism/Bureau/Comparaison/maqao_  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/anism/Bureau/Comparaison/maqao_  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/anism/Bureau/Comparaison/maqao_  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/anism/Bureau/Comparaison/maqao_2022  #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/anism/Bureau/Comparaison/maqao_  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/anism/Bureau/Comparaison/maqao_  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/anism/Bureau/Comparaison/maqao_  #
+#################################################################################################
+

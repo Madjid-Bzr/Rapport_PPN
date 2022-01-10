@@ -1,0 +1,33 @@
+
+* Info: Process launched (host arezki-Lenovo-B50-70, process 4381)2   1   6   
+6   5   7   
+3   2   2   
+8   8   8   
+8   5   9   
+3   3   3   
+13301   13112   13329   
+13280   12876   13096   
+12329   11888   12349   
+
+* Info: Process finished (host arezki-Lenovo-B50-70, process 4381)
+* Info: Dumping samples (host arezki-Lenovo-B50-70, process 4381)
+* Info: Dumping source info for callchain nodes (host arezki-Lenovo-B50-70, process 4381)
+* Info: Building/writing metadata (host arezki-Lenovo-B50-70)
+* Info: Finished collect step (host arezki-Lenovo-B50-70, process 4381)
+
+Your experiment path is /home/arezki/prog/maqao_2021-12-28_15-02-17/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#################################################################################################
+#    LEVEL    |     REPORT     |                            COMMAND                             #
+#################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/arezki/prog/maqao_2021-12-28_15-02-  #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/arezki/prog/maqao_2021-12-28_15  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/arezki/prog/maqao_2021-12-28_15  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/arezki/prog/maqao_2021-12-28_15  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/arezki/prog/maqao_2021-12-28_15-02-  #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/arezki/prog/maqao_2021-12-28_15  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/arezki/prog/maqao_2021-12-28_15  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/arezki/prog/maqao_2021-12-28_15  #
+#################################################################################################
+

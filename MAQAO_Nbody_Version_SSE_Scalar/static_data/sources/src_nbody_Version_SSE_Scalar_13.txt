@@ -1,0 +1,13 @@
+/home/anism/Bureau/Test Nbody Version Scalaire /nbody_Version_SSE_Scalar.c: 64 - 257
+--------------------------------------------------------------------------------
+
+64:   vector c = { 0.0, 0.0 };
+65:   __asm__ volatile (
+[...]
+96:   vector c = {0.0,0.0};
+97:    __asm__ volatile (
+[...]
+120:   return c;
+[...]
+256:   for (int i = 0; i < nbodies; i++)
+257:     positions[i] = add_vectors(positions[i], add_vectors(velocities[i], scale_vector(0.5, accelerations[i])));

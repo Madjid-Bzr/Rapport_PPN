@@ -1,0 +1,22 @@
+address;source_location;insn;indent
+0x13d6;/home/benbachir/Documents/matrix/matrix.c:37;MOV	-0xf4260(%RBP),%EAX;
+0x13dc;/home/benbachir/Documents/matrix/matrix.c:37;CLTQ;
+0x13de;/home/benbachir/Documents/matrix/matrix.c:37;IMUL	$0x7d0,%RAX,%RDX;
+0x13e5;/home/benbachir/Documents/matrix/matrix.c:37;MOV	-0xf4268(%RBP),%RAX;
+0x13ec;/home/benbachir/Documents/matrix/matrix.c:37;ADD	%RAX,%RDX;
+0x13ef;/home/benbachir/Documents/matrix/matrix.c:37;MOV	-0xf4258(%RBP),%EAX;
+0x13f5;/home/benbachir/Documents/matrix/matrix.c:37;CLTQ;
+0x13f7;/home/benbachir/Documents/matrix/matrix.c:37;MOV	(%RDX,%RAX,4),%EDX;
+0x13fa;/home/benbachir/Documents/matrix/matrix.c:37;MOV	-0xf4258(%RBP),%EAX;
+0x1400;/home/benbachir/Documents/matrix/matrix.c:37;CLTQ;
+0x1402;/home/benbachir/Documents/matrix/matrix.c:37;IMUL	$0x7d0,%RAX,%RCX;
+0x1409;/home/benbachir/Documents/matrix/matrix.c:37;MOV	-0xf4270(%RBP),%RAX;
+0x1410;/home/benbachir/Documents/matrix/matrix.c:37;ADD	%RAX,%RCX;
+0x1413;/home/benbachir/Documents/matrix/matrix.c:37;MOV	-0xf425c(%RBP),%EAX;
+0x1419;/home/benbachir/Documents/matrix/matrix.c:37;CLTQ;
+0x141b;/home/benbachir/Documents/matrix/matrix.c:37;MOV	(%RCX,%RAX,4),%EAX;
+0x141e;/home/benbachir/Documents/matrix/matrix.c:37;IMUL	%EDX,%EAX;
+0x1421;/home/benbachir/Documents/matrix/matrix.c:37;ADD	%EAX,-0xf4254(%RBP);
+0x1427;/home/benbachir/Documents/matrix/matrix.c:36;ADDL	$0x1,-0xf4258(%RBP);
+0x142e;/home/benbachir/Documents/matrix/matrix.c:36;CMPL	$0x1f3,-0xf4258(%RBP);
+0x1438;/home/benbachir/Documents/matrix/matrix.c:36;JLE	13d6 <matrixMultiplication+0x79>;

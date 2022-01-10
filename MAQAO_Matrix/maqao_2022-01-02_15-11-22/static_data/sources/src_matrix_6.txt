@@ -1,0 +1,5 @@
+/home/benbachir/Documents/matrix/matrix.c: 36 - 37
+--------------------------------------------------------------------------------
+
+36: 			for(k=0;k<ROW;k++){
+37: 				sum=sum+(matrix1[i][k]*matrix2[k][j]);

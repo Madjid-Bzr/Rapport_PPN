@@ -1,0 +1,8 @@
+main - /home/anism/Bureau/Comparaison/nbody1.c:199
+nbody.g1
+__libc_start_main - :0
+libc-2.31.so
+main - /usr/include/x86_64-linux-gnu/bits/stdio2.h:107
+unknown kernel region
+kernel
+move_particles - /home/anism/Bureau/Comparaison/nbody1.c:96

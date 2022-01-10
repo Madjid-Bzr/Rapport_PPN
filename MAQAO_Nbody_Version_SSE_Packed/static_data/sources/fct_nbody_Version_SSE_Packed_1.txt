@@ -1,0 +1,81 @@
+/usr/include/x86_64-linux-gnu/bits/stdio2.h: 107 - 107
+--------------------------------------------------------------------------------
+
+107:   return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+/home/anism/Bureau/Test Nbody Version Scalaire /nbody_Version_SSE_Packed.c: 41 - 308
+--------------------------------------------------------------------------------
+
+41:   __asm__ volatile ("rdtsc" : "=a" (a), "=d" (d));
+42:   
+43:   return (d << 32) | a;
+[...]
+66:   __asm__ volatile (
+[...]
+198:   for (int i = 0; i < nbodies - 1; i++)
+199:     for (int j = i + 1; j < nbodies; j++)
+200:       if (positions[i].x == positions[j].x &&
+201: 	  positions[i].y == positions[j].y)
+202: 	{
+203: 	  vector temp = velocities[i];
+204: 	  velocities[i] = velocities[j];
+205: 	  velocities[j] = temp;
+[...]
+228:   for (int i = 0; i < nbodies; i++)
+229:     velocities[i] = add_vectors(velocities[i], accelerations[i]);
+[...]
+242:   compute_accelerations();
+243:   compute_positions();
+[...]
+250: {
+[...]
+258:   srand(time(NULL));
+259:   
+260:   //
+261:   SDL_Init(SDL_INIT_VIDEO);
+262:   SDL_CreateWindowAndRenderer(800, 800, SDL_WINDOW_OPENGL, &window, &renderer);
+263:   
+264:   //
+265:   init_system();
+266:   
+267:   //Main loop
+268:   for (int i = 0; !quit && i < timeSteps; i++)
+269:     {	  
+270:       //
+271:       double before = (double)rdtsc();
+272:       
+273:       simulate();
+274: 
+275:       //
+276:       double after = (double)rdtsc();
+277:       
+278:       //
+279:       printf("%d %lf\n", i, (after - before));
+280:       
+281:       SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+282:       SDL_RenderClear(renderer);
+283:       
+284:       for (int i = 0; i < nbodies; i++)
+285: 	{
+286: 	  SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+287: 	  SDL_RenderDrawPoint(renderer, positions[i].x, positions[i].y);
+288: 	}
+289:       
+290:       SDL_RenderPresent(renderer);
+291:       
+292:       SDL_Delay(10);
+293:       
+294:       while (SDL_PollEvent(&event))
+295: 	if (event.type == SDL_QUIT)
+296: 	  quit = 1;
+297: 	else
+298: 	  if (event.type == SDL_KEYDOWN)
+299: 	    if (event.key.keysym.sym == SDLK_q)
+300: 	      quit = 1;
+301:     }
+302:   
+303:   SDL_DestroyRenderer(renderer);
+304:   SDL_DestroyWindow(window);
+305:   SDL_Quit();
+306:   
+307:   return 0;
+308: }

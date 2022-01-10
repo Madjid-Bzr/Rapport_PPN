@@ -1,0 +1,17 @@
+/home/anism/Bureau/nbody3D/0/nbody1.c: 60 - 73
+--------------------------------------------------------------------------------
+
+60:       for (u64 j = 0; j < n; j++)
+61:   {
+62:     //Newton's law
+63:     const f32 dx = p.x[j] - p.x[i]; //1
+64:     const f32 dy = p.y[j] - p.y[i]; //2
+65:     const f32 dz = p.z[j] - p.z[i]; //3
+66:     const f32 d_2 = (dx * dx) + (dy * dy) + (dz * dz) + softening; //9
+67:     const f32 d_3_over_2 = pow(d_2, 3.0 / 2.0); //11
+68:     
+69: 
+70:     //Net force
+71:     fx += (dx * (1/d_3_over_2)); //13
+72:     fy += (dy * (1/d_3_over_2)); //15
+73:     fz += (dz * (1/d_3_over_2)); //17

@@ -1,0 +1,49 @@
+/home/anism/Bureau/nbody3D/0/nbody1.c: 47 - 92
+--------------------------------------------------------------------------------
+
+47: {
+48:   //
+49:   const f32 softening = 1e-20;
+50:  
+51:   //
+52:   for (u64 i = 0; i < n; i++)
+53:     {
+54:       //
+55:       f32 fx = 0.0;
+56:       f32 fy = 0.0;
+57:       f32 fz = 0.0;
+58: 
+59:       //23 floating-point operations
+60:       for (u64 j = 0; j < n; j++)
+61:   {
+62:     //Newton's law
+63:     const f32 dx = p.x[j] - p.x[i]; //1
+64:     const f32 dy = p.y[j] - p.y[i]; //2
+65:     const f32 dz = p.z[j] - p.z[i]; //3
+66:     const f32 d_2 = (dx * dx) + (dy * dy) + (dz * dz) + softening; //9
+67:     const f32 d_3_over_2 = pow(d_2, 3.0 / 2.0); //11
+68:     
+69: 
+70:     //Net force
+71:     fx += (dx * (1/d_3_over_2)); //13
+72:     fy += (dy * (1/d_3_over_2)); //15
+73:     fz += (dz * (1/d_3_over_2)); //17
+74:   }
+75:   
+76: 
+77:       //
+78:       p.vx[i] += (dt * fx); //19
+79:       p.vy[i] += (dt * fy); //21
+80:       p.vz[i] += (dt * fz); //23
+81:     }
+82: 
+83:   //3 floating-point operations
+84:   for (u64 i = 0; i < n; i++)
+85:     {
+86:       p.x[i] += (dt * p.vx[i]);
+87:       p.y[i] += (dt * p.vy[i]);
+88:       p.z[i] += (dt * p.vz[i]);
+89: 
+90: 
+91:     }
+92: }

@@ -1,0 +1,7 @@
+loop_id;module;function_name;function_id;source_info;level;time_p;time_s;time_s_min;time_s_avg;time_s_max;cov_deviation;nb_threads;
+11;nbody0;compute_accelerations;17;nbody0.c:54-136;Innermost;87.74;7.02;;;;;;
+5;nbody0;main;1;nbody0.c:115-121;Innermost;3.38;0.27;;;;;;
+4;nbody0;main;1;nbody0.c:114-121;InBetween;0.69;0.05;;;;;;
+12;nbody0;compute_accelerations;17;nbody0.c:54-136;Outermost;0.19;0.01;;;;;;
+7;nbody0;main;1;nbody0.c:54-145;Innermost;0.06;0;;;;;;
+6;nbody0;main;1;nbody0.c:54-152;Innermost;0.06;0;;;;;;

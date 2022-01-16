@@ -1,0 +1,26 @@
+address;source_location;insn;indent
+0x1469;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x4(%RBP),%EAX;
+0x146c;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;CLTQ;
+0x146e;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;LEA	(,%RAX,4),%RDX;
+0x1476;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x20(%RBP),%RAX;
+0x147a;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;ADD	%RDX,%RAX;
+0x147d;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	(%RAX),%EAX;
+0x147f;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;CMP	%EAX,-0x18(%RBP);
+0x1482;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;JE	14ae <check_column_ok+0x64>;
+0x1484;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x4(%RBP),%EAX;
+0x1487;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;CLTQ;
+0x1489;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;LEA	(,%RAX,4),%RDX;
+0x1491;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x20(%RBP),%RAX;
+0x1495;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;ADD	%RDX,%RAX;
+0x1498;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	(%RAX),%ECX;
+0x149a;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x4(%RBP),%EDX;
+0x149d;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x18(%RBP),%ESI;
+0x14a0;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	-0x14(%RBP),%EAX;
+0x14a3;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;MOV	%EAX,%EDI;
+0x14a5;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;CALL	1404 <check_same_diagonal>;
+0x14aa;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;TEST	%AL,%AL;
+0x14ac;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:24;JE	14b5 <check_column_ok+0x6b>;
+0x14b5;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:23;ADDL	$0x1,-0x4(%RBP);
+0x14b9;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:23;MOV	-0x4(%RBP),%EAX;
+0x14bc;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:23;CMP	-0x14(%RBP),%EAX;
+0x14bf;/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c:23;JL	1469 <check_column_ok+0x1f>;

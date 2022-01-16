@@ -1,0 +1,21 @@
+SDL_DYNAPI_entry - :0
+libSDL2-2.0.so.0.10.0
+nouveau_drm_screen_create - :0
+iris_dri.so
+__driDriverGetExtensions_d3d12 - :0
+_dl_find_dso_for_object - :0
+ld-2.31.so
+_dl_catch_exception - :0
+libc-2.31.so
+psiginfo - :0
+__printf_chk - :0
+unknown kernel region
+kernel
+_dl_rtld_di_serinfo - :0
+compute_accelerations - /home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody0.c:62
+nbody0
+_XlcDefaultMapModifiers - :0
+libX11.so.6.3.0
+XML_GetFeatureList - :0
+libexpat.so.1.6.11
+__clock_gettime - :0

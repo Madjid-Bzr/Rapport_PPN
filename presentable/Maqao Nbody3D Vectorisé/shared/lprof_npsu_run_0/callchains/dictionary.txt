@@ -1,0 +1,2 @@
+main - /home/anism/Téléchargements/nbody3D/0/nbody1.c:142
+nbody.g1

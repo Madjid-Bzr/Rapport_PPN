@@ -1,0 +1,41 @@
+
+* Info: Process launched (host benbachir-Lenovo, process 45193)
+[1mTotal memory size:[0m 393216 B, 384 KiB, 0 MiB
+
+[1m Step    Time, s Interact/s  GFLOP/s[0m
+    0  1.001e+00  2.681e+08      6.2 *
+    1  9.697e-01  2.768e+08      6.4 *
+    2  9.663e-01  2.778e+08      6.4 *
+    3  9.708e-01  2.765e+08      6.4 
+    4  9.631e-01  2.787e+08      6.4 
+    5  9.756e-01  2.751e+08      6.3 
+    6  9.541e-01  2.813e+08      6.5 
+    7  9.377e-01  2.862e+08      6.6 
+    8  9.384e-01  2.860e+08      6.6 
+    9  9.499e-01  2.826e+08      6.5 
+-----------------------------------------------------
+[1mAverage performance:      [42m       6.5 +- 0.1 GFLOP/s[0m
+-----------------------------------------------------
+
+* Info: Process finished (host benbachir-Lenovo, process 45193)
+* Info: Dumping samples (host benbachir-Lenovo, process 45193)
+* Info: Dumping source info for callchain nodes (host benbachir-Lenovo, process 45193)
+* Info: Building/writing metadata (host benbachir-Lenovo)
+* Info: Finished collect step (host benbachir-Lenovo, process 45193)
+
+Your experiment path is /home/benbachir/Rapport_PPN/Report_Nbody3/0/maqao_2021-12-31_19-57-22/tools/lprof_npsu_run_0
+
+To display your profiling results:
+#################################################################################################
+#    LEVEL    |     REPORT     |                            COMMAND                             #
+#################################################################################################
+#  Functions  |  Cluster-wide  |  maqao lprof -df xp=/home/benbachir/Rapport_PPN/Report_Nbody3  #
+#  Functions  |  Per-node      |  maqao lprof -df -dn xp=/home/benbachir/Rapport_PPN/Report_Nb  #
+#  Functions  |  Per-process   |  maqao lprof -df -dp xp=/home/benbachir/Rapport_PPN/Report_Nb  #
+#  Functions  |  Per-thread    |  maqao lprof -df -dt xp=/home/benbachir/Rapport_PPN/Report_Nb  #
+#  Loops      |  Cluster-wide  |  maqao lprof -dl xp=/home/benbachir/Rapport_PPN/Report_Nbody3  #
+#  Loops      |  Per-node      |  maqao lprof -dl -dn xp=/home/benbachir/Rapport_PPN/Report_Nb  #
+#  Loops      |  Per-process   |  maqao lprof -dl -dp xp=/home/benbachir/Rapport_PPN/Report_Nb  #
+#  Loops      |  Per-thread    |  maqao lprof -dl -dt xp=/home/benbachir/Rapport_PPN/Report_Nb  #
+#################################################################################################
+

@@ -1,0 +1,13 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody_op.c: 87 - 96
+--------------------------------------------------------------------------------
+
+87:     for (int i = 0; i < nbodies; i++) {
+88:         accelerations.x[i] = 0;
+89:         accelerations.y[i] = 0;
+90: 
+91:         for (int j = i + 1; j < nbodies; j++) {
+92:    
+93:    
+94:             accelerations.x[i] += (GravConstant * masses[j] / (pow(sqrt((positions.x[j] - positions.x[i]) * (positions.x[j] - positions.x[i]) + (positions.y[j] - positions.y[i]) * (positions.y[j] - positions.y[i])), 3) + 1e7))* (positions.x[j] - positions.x[i]); 
+95:             
+96:             accelerations.y[i] += (GravConstant * masses[j] / (pow(sqrt((positions.x[j] - positions.x[i]) * (positions.x[j] - positions.x[i]) + (positions.y[j] - positions.y[i]) * (positions.y[j] - positions.y[i])), 3) + 1e7)) * (positions.y[j] - positions.y[i]); 

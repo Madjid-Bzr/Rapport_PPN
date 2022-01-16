@@ -1,0 +1,8 @@
+address;source_location;insn;indent
+0x5f8;:0;SUB	$0x8,%RSP;
+0x5fc;:0;MOV	0x2019e5(%RIP),%RAX;
+0x603;:0;TEST	%RAX,%RAX;
+0x606;:0;JE	60a <_init+0x12>;
+0x608;:0;CALL	%RAX;
+0x60a;:0;ADD	$0x8,%RSP;
+0x60e;:0;RET;

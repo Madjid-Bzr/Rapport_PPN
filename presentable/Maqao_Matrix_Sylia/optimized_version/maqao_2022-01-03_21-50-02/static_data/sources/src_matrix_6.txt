@@ -1,0 +1,9 @@
+/home/benbachir/Rapport_PPN/matrix/optimized_version/matrix.c: 34 - 39
+--------------------------------------------------------------------------------
+
+34: 		for(j=0;j<COLUMN;j++)
+35: 		{
+36: 			for(k=0;k<ROW;k++){
+37: 				sum=sum+(matrix1[i][k]*matrix2[k][j]);
+38: 			}
+39: 			matrix3[i][j]=sum;

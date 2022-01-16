@@ -1,0 +1,7 @@
+********************************************************************************
+
+MAQAO 2.14.6 - 6f2949440bb918b7d680937f9c542108ab5a5c3a::20211025-181241 || 2021/10/25
+
+maqao oneview -R1 -- matrix 
+
+CMD:   /usr/bin/maqao lprof  --xp="/home/benbachir/Rapport_PPN/matrix/optimized_version/maqao_2022-01-03_21-50-02/tools/lprof_npsu_run_0" --mpi-command=""   -- /home/benbachir/Rapport_PPN/matrix/optimized_version/maqao_2022-01-03_21-50-02/binaries/matrix 

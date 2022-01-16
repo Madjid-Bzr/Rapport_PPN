@@ -1,0 +1,13 @@
+Node;Process;Thread;System (%);Binary (%);MPI (%);Nb Cycle Events;OMP (%);Others (%);String (%);Memory (%);IO (%);Time (s);Math (%);Pthread (%);
+_ALL;_ALL;_ALL;0.55;81.35;0;917;0;15.59;0;0.22;0.33;3.9;0;1.96;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;_ALL;_ALL;0.55;81.35;0;917;0;15.59;0;0.22;0.33;3.9;0;1.96;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;_ALL;0.55;81.35;0;917;0;15.59;0;0.22;0.33;3.9;0;1.96;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8754;0.64;95.52;0;781;0;3.07;0;0.26;0.38;3.9;0;0.13;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8770;0;0;0;17;0;82.35;0;0;0;0.08;0;17.65;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8763;0;0;0;16;0;87.5;0;0;0;0.08;0;12.5;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8769;0;0;0;17;0;70.59;0;0;0;0.08;0;29.41;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8767;0;0;0;15;0;93.33;0;0;0;0.07;0;6.67;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8768;0;0;0;20;0;90;0;0;0;0.1;0;10;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8765;0;0;0;12;0;91.67;0;0;0;0.06;0;8.33;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8764;0;0;0;16;0;81.25;0;0;0;0.08;0;18.75;
+anism-VivoBook-ASUSLaptop-X515EA-X515EA;8754;8766;0;0;0;23;0;100;0;0;0;0.11;0;0;

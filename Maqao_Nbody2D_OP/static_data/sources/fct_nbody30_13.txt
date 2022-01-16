@@ -1,0 +1,46 @@
+/home/madjid/Bureau/CHPS/Archi_Paralelle/TP2-1/todo/nbody30.c: 69 - 116
+--------------------------------------------------------------------------------
+
+69: { 
+70:     for (usize i = 0; i < nbodies; i++) {
+71:         accelerations.x[i] = 0;
+72:         accelerations.y[i] = 0;
+[...]
+79:         for (usize j = i + 1; j < nbodies; j += 4) {
+80:             posx[0] = positions.x[j] - positions.x[i];
+81:             posx[1] = positions.x[j + 1] - positions.x[i];
+82:             posx[2] = positions.x[j + 2] - positions.x[i];
+83:             posx[3] = positions.x[j + 3] - positions.x[i];
+84: 
+85:             
+86:             posy[0] = positions.y[j] - positions.y[i];
+87:             posy[1] = positions.y[j + 1] - positions.y[i];
+88:             posy[2] = positions.y[j + 2] - positions.y[i];
+89:             posy[3] = positions.y[j + 3] - positions.y[i];
+90: 
+91: 
+92:             modv[0] = sqrt(posx[0] * posx[0] + posy[0] * posy[0]);
+93:             modv[1] = sqrt(posx[1] * posx[1] + posy[1] * posy[1]);
+94:             modv[2] = sqrt(posx[2] * posx[2] + posy[2] * posy[2]);
+95:             modv[3] = sqrt(posx[3] * posx[3] + posy[3] * posy[3]);
+96: 
+97:             
+98:             dist[0] = cst / (modv[0] * modv[0] * modv[0] + 1e7);
+99:             dist[1] = cst / (modv[1] * modv[1] * modv[1] + 1e7);
+100:             dist[2] = cst / (modv[2] * modv[2] * modv[2] + 1e7);
+101:             dist[3] = cst / (modv[3] * modv[3] * modv[3] + 1e7);
+102:          
+103:         }
+104: 
+105:         for (usize j = i + 1; j < nbodies; j += 4) {
+106:             accelerations.x[i] += (dist[0] * posx[0]) + (dist[1] * posx[1]) +
+107:                                   (dist[2] * posx[2]) + (dist[3] * posx[3]);
+108:                                  
+109:             accelerations.y[i] += (dist[0] * posy[0]) + (dist[1] * posy[1]) +
+110:                                   (dist[2] * posy[2]) + (dist[3] * posy[3]);
+111: 
+112:             accelerations.x[j] = -accelerations.x[i];
+113:             accelerations.y[j] = -accelerations.y[i];
+114:         }
+115:     }
+116: }

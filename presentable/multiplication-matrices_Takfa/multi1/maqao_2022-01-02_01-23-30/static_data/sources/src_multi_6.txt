@@ -1,0 +1,6 @@
+/home/arezki/Rapport_PPN/multiplication-matrices/multi1/multi1.c: 27 - 29
+--------------------------------------------------------------------------------
+
+27:         sum +=   A[i][k] * B[k][j];
+28: 	
+29: 	C[i][j] = sum;

@@ -1,0 +1,10 @@
+/home/madjid/Bureau/CHPS/Gl/tp-bgl-2-Madjid-Bzr/queens.c: 8 - 14
+--------------------------------------------------------------------------------
+
+8:                                 const int c1, const int r1) {
+9: 
+10: 	if (abs(c0-c1)==abs(r0-r1) )
+11:           return true;
+12: 	return false;
+13: 	
+14: }

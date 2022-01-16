@@ -1,0 +1,5 @@
+main - /home/benbachir/Documents/matrix/matrix.c:26
+matrix
+__libc_start_main - :0
+libc-2.31.so
+_IO_printf - :0

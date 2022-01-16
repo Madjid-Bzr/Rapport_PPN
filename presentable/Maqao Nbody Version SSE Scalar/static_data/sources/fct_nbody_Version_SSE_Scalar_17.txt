@@ -1,0 +1,34 @@
+/home/anism/Bureau/Test Nbody Version Scalaire /nbody_Version_SSE_Scalar.c: 64 - 244
+--------------------------------------------------------------------------------
+
+64:   vector c = { 0.0, 0.0 };
+65:   __asm__ volatile (
+[...]
+90:   return c;
+[...]
+96:   vector c = {0.0,0.0};
+97:    __asm__ volatile (
+[...]
+126:   vector c = { 0.0, 0.0 };
+127:   __asm__ volatile (
+[...]
+154:   return c;
+[...]
+160:   double c={0.0};
+161:   __asm__ volatile ( 
+[...]
+185:   return c;
+[...]
+232: { 
+233:   for (int i = 0; i < nbodies; i++)
+234:     {
+235:       accelerations[i].x = 0;
+236:       accelerations[i].y = 0;
+237:       
+238:       for(int j = 0; j < nbodies; j++)
+239: 	if(i != j)
+240: 	  accelerations[i] = add_vectors(accelerations[i],
+241: 					 scale_vector(GravConstant * masses[j] / (pow(mod(sub_vectors(positions[i], positions[j])), 3) + 1e7),
+242: 						      sub_vectors(positions[j], positions[i])));
+243:     }
+244: }

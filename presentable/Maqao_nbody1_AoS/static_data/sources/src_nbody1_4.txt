@@ -1,0 +1,11 @@
+/home/katia/Test-maqao/nbody1.c: 122 - 129
+--------------------------------------------------------------------------------
+
+122:   for (int i = 0; i < nbodies - 1; i++)
+123:     for (int j = i + 1; j < nbodies; j++)
+124:       if (positions[i].x == positions[j].x &&
+125: 	  positions[i].y == positions[j].y)
+126: 	{
+127: 	  vector temp = velocities[i];
+128: 	  velocities[i] = velocities[j];
+129: 	  velocities[j] = temp;
